@@ -1,0 +1,198 @@
+doctype html 
+html
+  head
+    include head 
+    +head
+     
+    
+  body
+
+    block navbar
+
+        include navbar.pug
+        +navbar
+
+    //- end navbar
+    block content
+    .container
+        .card.text-white
+            img.card-img(src='../static/images/Study-In-UK.jpeg' alt='study')
+            #insidePageBanner.card-img-overlay
+                #insidePageBanner-1
+                    h1 Write the heading here
+                    h5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, alias.
+                    a.btn.btn-primary(href='#')  Get Expert Advoice
+                #insidePageBanner-2
+                    h1 Write the heading here
+                    a.btn.btn-primary(href='#')  Get Expert Advoice
+    //- News and Events
+
+
+    section#mainBody.p-2
+    block main_news
+
+        .container
+            .row.text-center.g-4
+                
+                block mainBody
+                .col-md-9
+                    .bg-light.rounded
+                        .card-body
+                            h3.card-title.text-center.mb-3
+                                | Study in Top Universities in UK with Maxxcell!
+                                
+                            p.text-start 
+                              |IELTS Prep/University Shortlisting/Applications/ Scholarships/Education Loans/ Visa
+                            p.text-start 
+                              |No matter if it is an Ivy League college, Oxford, Cambridge, or any other university... Maxxcell helps students get into the best UK universities.
+                            p.text-start 
+                              |Let's crack the code of getting into the topmost UK Colleges & Universities!
+                            p.text-start 
+                              |Getting into top UK universities, such as Oxford, or Cambridge can be a difficult and competitive procedure with low admission rates. Maxxcell's experienced abroad counselors ensure that our students' applications stand out in the worldwide candidate pool by addressing every part of the university application with the same dedication. Our team of expert counselors helps you  
+                            ul.text-start(type='disc')
+                                li Explore study options in the UK
+                                li Select the right institution and university
+                                li Find the right course
+                                li Apply to multiple universities
+                                li Obtaining loans/strengthening your financial documents
+                                li To bag a decent scholarship
+                                li To ensure the visa approval
+                                li Understand pre-departure details 
+                            h6.card-title.text-start 
+                             |WHY STUDY IN UK?
+                            p.text-start
+                              |With thousands of degrees available to students, the UK and its universities have an undeniable reputation for academic distinction and quality, as well as being an attractive destination for above a million foreign students from all over the world for many decades. 
+                            p.text-start 
+                              |There are numerous advantages to pursue studies in the United Kingdom. Some of these reasons may be purely academic for you, but if you choose to study in the UK, you will receive a lot more value from this one-of-a-kind experience in addition to receiving a high-quality education.  
+                              p 
+                                ul.text-start(type='disc')
+                                    li Degrees from UK prepare you for the international market.
+                                    li Higher standard of education enhances the chances of better placements.
+                                    li Work options after graduation through the new Graduate Route.
+                                    li Short, customizable courses that are specifically designed to help you get the most out of your education as soon as possible.
+                                    li Universities, which continue to be globally recognized for their devotion to research, provide access to world-class research.            
+                                    li An incredible, unique student experience unlike any other country, where you may have fun, learn new things, and make lifelong friends.
+                            h6.card-title.text-start 
+                              |UK EDUCATION SYSTEM
+                              p
+                                ul.text-start(type='disc')  
+                                    li There are three main parts of the English education system: Primary, secondary, and higher education. At the early age of five, kids must begin attending school. Education is compulsory till the age of ten. Somewhere at the age of eleven, most of the students move to secondary school.
+                                    li Students then may continue with their secondary education for another two years (sixth form), resulting in an A level award in most cases, however other qualifications and courses, such as BTEC credentials and the International Baccalaureate, are available.
+                                    li However, higher education takes the next three years to commence, unlike post-graduation which takes at least 3 years or more.
+                            h6.card-title.text-start 
+                              |Degrees offered.
+                            h6.card-title.text-start 
+                              |Foundation Courses 
+                              p 
+                                ul.text-start(type='disc')
+                                    li As the name goes, it is a one-year foundation course done as a pre-degree program to prepare you for your university courses.
+                            h6.card-title.text-start
+                              |Bachelor's Degree
+                              p 
+                               ul.text-start(type='disc')
+                                    li Bachelor's degrees are typically three years long UG degrees that are done just after schooling.
+                            h6.card-title.text-start
+                             |Master's degree
+                             p 
+                               ul.text-start(type='disc')
+                                    li The Master's level programs are usually one year long; however with work placement opportunities, it can be finished in two years.
+                            h6.card-title.text-start 
+                              |Doctorate
+                              p 
+                               ul.text-start(type='disc')
+                                    li One can pursue a doctoral program after completing Masters. Doctoral programs typically last between three and four years, based on study subject and university
+                            h6.card-title.text-start 
+                              |INTAKE
+                              p 
+                                ul.text-start(type='disc')
+                                     li January /February
+                                     li September
+                                     li April/May
+                            h6.card-title.text-start
+                              |WORK RIGHTS & STAY BACK
+                              p  
+                                ul.text-start(type='disc')
+                                     li You have the right to work 20 hours a week during the terms and at the time of holiday breaks, you are allowed to work full time.
+                                     li UK has reintroduced the Stay Back of 2 Years in UK. 
+                            p.text-start   
+                              |Need more info? Contact our expert counselor.       
+                            
+                          
+
+
+
+
+
+
+
+                block news
+                .col-md
+                    .position-sticky(style='top: 6rem;')
+                        .bg-light.rounded.position-sticky
+                            .card-body.text-start
+                                h3.card-title.mb-3
+                                    a.text-dark(href='https://www.google.com/' style='text-decoration: none;') News and Events
+                                include news_events.pug
+                                +news_events
+
+
+    //- End News and Events
+
+
+    //- FAQ start
+    block faq 
+
+    section#faq.p-4
+      .container.py-4
+        .text-center
+          h1 F.A.Q.
+          p
+            | Although we have shared all the information with you on our website, if there are any queries that are unaddressed,
+            
+            br
+            | you can find the answers to them below in our FAQs:
+        #accordionFlushExample.accordion.accordion-flush
+          .accordion-item
+            h2#flush-headingOne.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseOne' aria-expanded='false' aria-controls='flush-collapseOne')
+                | Why is the United Kingdom the finest country for higher education?
+            #flush-collapseOne.accordion-collapse.collapse(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | Students who study here have access to expert teachers, world-class facilities, and cutting-edge research
+          .accordion-item
+            h2#flush-headingTwo.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseTwo' aria-expanded='false' aria-controls='flush-collapseTwo')
+                | Can I get a scholarship to study in UK?
+            #flush-collapseTwo.accordion-collapse.collapse(aria-labelledby='flush-headingTwo' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | Yes, you may get it. International students can apply for a variety of scholarships, grants, and bursaries at UK universities to cover their tuition fees.  
+          .accordion-item
+            h2#flush-headingThree.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseThree' aria-expanded='false' aria-controls='flush-collapseThree')
+                | For getting a UK student visa how much bank balance is required?
+            #flush-collapseThree.accordion-collapse.collapse(aria-labelledby='flush-headingThree' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | Students must present a bank statement from the previous 28 days that covers 9 months’ living costs as well as any overdue tuition fees. As a living expense, £1,265 per month is shown.
+                
+          .accordion-item
+            h2#flush-headingFour.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFour' aria-expanded='false' aria-controls='flush-collapseFour')
+                | What kind of accommodation can we expect in the UK?
+            #flush-collapseFour.accordion-collapse.collapse(aria-labelledby='flush-headingFour' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | You can either rent your own room or stay in the university or college's halls of residence on-site or nearby. You can also choose to live in a shared apartment.
+         
+          .accordion-item
+            h2#flush-headingFive.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFive' aria-expanded='false' aria-controls='flush-collapseFive')
+                | Is a 10+2+3 education system accepted by UK institutions?
+            #flush-collapseFive.accordion-collapse.collapse(aria-labelledby='flush-headingFive' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | Yes, UK universities accept the 10+2+3 format for master's programs.
+            
+        //- footer start
+
+    block footer
+        footer#footer
+            include footer.pug 
+            +footer

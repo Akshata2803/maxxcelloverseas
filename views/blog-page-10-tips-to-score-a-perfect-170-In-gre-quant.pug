@@ -1,0 +1,182 @@
+doctype html 
+html
+  head
+    include head 
+    +head
+    
+    
+  body
+
+    block navbar
+
+        include navbar.pug
+        +navbar
+
+
+    block banner 
+    
+      block content
+        .container
+            .card.text-white
+                img.card-img(src='../static/images/blog/10-Tips-To-Score-A-perfect-170-In-GRE-Quant.jpg' alt='study')
+
+      .container 
+        .row.g-2
+          .col-md-2
+            .mt-4.pt-4.position-sticky(style='top: 6rem;')
+              p
+                a(href='#1') Number of questions on GRE Quantitative Reasoning section:
+                  
+              p
+                  a(href='#2') Breaking Down the GRE Quant Syllabus:
+            
+              p
+                  a(href='#3') Elimination as a strategy:
+              p
+                  a(href='#4') Formulae Sheet:
+              p
+                  a(href='#5') Maintain an error log:
+              p
+                  a(href='#6') Time management:
+              p
+                  a(href='#7') Slow down on Word Problems:
+              p
+                  a(href='#8') Analyze tables/graphs thoroughly:
+              p
+                  a(href='#9') Always break down complex figures:
+              p
+                  a(href='#10') Use the calculator judiciously:
+         
+          .col-md-10
+                    
+            section#1.container.my-4
+              .row.featurette.bg-light.rounded-2
+                  //- .aboutMainclass.col-md-7.order-md-2.order-2
+                  h2.text-center
+                    | 10 Tips on How to Score Perfect 170 in GRE Quant  
+                  br  
+                  p
+                    |Graduate Record Examination (GRE) is an international standardized test required for admission into Graduate schools in the United States of America. The test is organized and administered by Education Testing Services (ETS). The GRE aims to measure verbal reasoning, quantitative reasoning, analytical writing, and critical thinking skill. The Quantitative Aptitude score range is 130 – 170. The following 10 tips will help you score 170 in gre quant:
+                    
+
+
+ 
+                
+
+            section#2.container
+              .row.featurette.bg-light.rounded-2
+                  //- .aboutMainclass.col-md-7.order-md-1.order-2
+                  h2.text-center
+                    | 1. Number of questions on GRE Quantitative Reasoning section:
+                    
+                  p
+                    | Quantitative section has 40 questions in total which are divided into 2 sections each containing 20 questions and the time for each section will be 35 minutes. On a total the GRE Quantitative sections takes 1 hour 10 minutes.
+                    br
+                    br
+                    | This section includes four main topics
+                    li Arithmetic
+                    li Algebra
+                    li Geometry
+                    li Data Analysis
+                
+            section#3.container.my-4
+              .row.featurette.bg-light.rounded-2
+                  //-.aboutMainclass.col-md-7.order-md-2.order-2
+                  h2.text-center
+                    | 2. Breaking Down the GRE Quant Syllabus:
+                    br
+                    br 
+                  p
+                    |  Arithmetic: To tackle this section you need to have a better understanding on number family and operations performed on them.
+                    br
+                    br
+                    | Algebra: Since basic algebra focuses on simplifying and manipulations of equations you need to practice by taking up simple problems followed by difficult ones.
+                    br
+                    br
+                    | Geometry: Memorize basic Geometric formulas for easy calculation and saving time.
+                    br
+                    br
+                    | Data Analysis: This section needs more attention as it may have more data to be considered while solving the problems. Practice a lot and take the quantitative tests to score well.
+
+                
+            
+            section#4.container
+              .row.featurette.bg-light.rounded-2
+                  //-.aboutMainclass.col-md-7.order-md-1.order-2
+                  h2.text-center
+                    | 3. Elimination as a strategy:
+                    
+                  p
+                    | Whenever you’re stuck with a question that you think you cannot solve in the traditional way, you can employ the process of elimination as a backup strategy. It is a simple process where you eliminate options based on how irrelevant or wrong they sound in the context of the given question, and then end up with that one option that sounds the least incorrect to you. Then you choose that option and proceed.
+                    
+            section#5.container.my-4
+              .row.featurette.bg-light.rounded-2
+                  //-.aboutMainclass.col-md-7.order-md-1.order-2
+                  h2.text-center
+                    | 4. Formulae Sheet:
+                    
+                  p
+                    | This will come in very handy during your GRE Quant practice. As you know there are applications for quant formulas like surface area and volumes. Most questions require taking a rational approach. It will be easier if you memorize the formulas. Maintain a handbook of GRE formulas.   
+            section#6.container
+              .row.featurette.bg-light.rounded-2
+                  //-.aboutMainclass.col-md-7.order-md-1.order-2
+                  h2.text-center
+                    | 5.Maintain an error log:
+                    
+                  p
+                    | It’s not wrong to make mistakes, what’s wrong is making same mistakes again and again. This way, you will never learn. Log your mistakes so that they don’t get repeated. Taking the time to review your GRE Maths performance at the end of every test will result in greater confidence.
+            section#7.container.my-4
+              .row.featurette.bg-light.rounded-2
+                  //-.aboutMainclass.col-md-7.order-md-1.order-2
+                  h2.text-center
+                    | 6.Time management:
+                    
+                  p
+                    | While studying for the GRE, you must consciously balance the time you are spending on each chapter or concept that you learn. Sometimes, it is easy to go adrift and spend more time than necessary on a particular topic, or even a question. Always learn to balance your time, by allotting sufficient time slots for each and every topic in your study plan.
+            section#8.container
+              .row.featurette.bg-light.rounded-2
+                  //-.aboutMainclass.col-md-7.order-md-1.order-2
+                  h2.text-center
+                    | 7.Slow down on Word Problems:
+                    
+                  p
+                    | Make sure you really understand the concepts underlying the question. One or two words can radically change the meaning. Don’t rush these challenging questions, even if the math seems fairly obvious; you’ll need to spend some time familiarizing yourself with “English-to-Math” translation tables.
+            section#9.container.my-4
+              .row.featurette.bg-light.rounded-2
+                  //-.aboutMainclass.col-md-7.order-md-1.order-2
+                  h2.text-center
+                    | 8.Analyze tables/graphs thoroughly:
+                    
+                  p
+                    |  For Data Interpretation questions, don’t rush to the problems. Read the titles, labels, units, and note the general trends of the data beforehand. How do the variables interact with one another? What general conclusions can be drawn about the presented information? You’ll know exactly where to find the correct answer if you already full grasp the data.
+            section#10.container
+              .row.featurette.bg-light.rounded-2
+                  //-.aboutMainclass.col-md-7.order-md-1.order-2
+                  h2.text-center
+                    | 9.Always break down complex figures:
+                    
+                  p
+                    | Tough Geometry questions like to hide triangles with quadrilaterals, and circles within squares. Look for ways to apply information from one piece of the shape to another. Redraw the figures on your scratch pad if you need to – label everything.
+            section#11.container.my-4
+              .row.featurette.bg-light.rounded-2
+                  //-.aboutMainclass.col-md-7.order-md-1.order-2
+                  h2.text-center
+                    | 10.Use the calculator judiciously:
+                    
+                  p
+                    |  When you practice for the GRE, avoid using a calculator unless you really need one. Most GRE Quant questions can be solved within 1-3 minutes without one. It’s provided on the GRE and allows for simple calculations, but don’t use it as a crutch. You should only need it for a couple of questions. You’ll save time if you can do simple conversions in your head.
+            section#11.container
+              .row.featurette.bg-light.rounded-2
+                  //-.aboutMainclass.col-md-7.order-md-1.order-2
+                  h6.text-center
+                    | For any queries regarding the GRE exam, email us at info@maxxcell.in .
+    
+    
+    
+    
+    //- footer start
+
+    block footer
+        footer#footer
+            include footer.pug 
+            +footer

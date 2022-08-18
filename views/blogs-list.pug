@@ -1,0 +1,117 @@
+doctype html 
+html
+  head
+    include head 
+    +head
+    
+    
+    body
+
+        block navbar
+
+            include navbar.pug
+            +navbar
+
+            //- end navbar
+
+            //- banner start 
+        block content
+        .container
+            .card.text-white
+                img.card-img(src='../static/images/blog/1.jpg' alt='study')
+            //- #insidePageBanner.card-img-overlay
+            //-     #insidePageBanner-1
+            //-         h1 Write the heading here
+            //-         h5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, alias.
+            //-         a.btn.btn-primary(href='#')  Get Expert Advoice
+            //-     #insidePageBanner-2
+            //-         h1 Write the heading here
+            //-         a.btn.btn-primary(href='#')  Get Expert Advoice
+
+        block blog_list 
+        .container 
+            .m-4.text-center
+                h2 Treasure of knowledge
+             
+            .row.g-4
+                .col-md
+                    .card(style='width: 18rem;')
+                        img.card-img-top(src='../static/images/blog/10-Tips-To-Score-A-perfect-170-In-GRE-Quant.jpg' alt='london')
+                        .card-body
+                            h5.card-title 10 TIPS ON HOW TO SCORE PERFECT 170 IN GRE QUANT 
+                            p.card-text
+                                | Graduate Record Examination (GRE) is an international standardized test required for admission into Graduate schools in the United States of America...
+                  
+                            p.card-text
+                                small.text-muted Last updated 30-July-2022
+                            p
+                                a.card-link(href='/blog-page-10-tips-to-score-a-perfect-170-In-gre-quant') Read more
+                .col-md
+                    .card(style='width: 18rem;')
+                        img.card-img-top(src='../static/images/blog/10-Tips-to-crack-the-IELTS-Exam.jpg' alt='london')
+                        .card-body
+                            h5.card-title 10 TIPS TO CRACK THE IELTS EXAM
+                            p.card-text
+                                | IELTS is the International English Language Testing System, the world’s most popular English language proficiency test for higher education and global immigration...
+                  
+                            p.card-text
+                                small.text-muted Last updated 30-July-2022
+                            p
+                                a.card-link(href='/blog-page-10-Tips-to-crack-the-IELTS-Exam') Read more
+                .col-md
+                    .card(style='width: 18rem;')
+                        img.card-img-top(src='../static/images/blog/10-Tips-to-remember-before-writing-a-professional-SOP-for-higher-Ranked-Universities.jpg' alt='london')
+                        .card-body
+                            h5.card-title 10 TIPS TO REMEMBER BEFORE WRITING A PROFESSIONAL STATEMENT OF PURPOSE (SOP) FOR HIGHER RANKED UNIVERSITIES
+                            p.card-text
+                                | The Statement of Purpose (SOP) is an application essay that is often asked by universities abroad...
+                      
+                            p.card-text
+                                small.text-muted Last updated 30-July-2022
+                            p
+                                a.card-link(href='/blog-page-10-Tips-to-remember-before-writing-a-professional-SOP-for-higher-Ranked-Universities') Read more
+                .col-md
+                    .card(style='width: 18rem;')
+                        img.card-img-top(src='../static/images/blog/Top-10-Programs-for-Data-Science-in-USA.jpg' alt='london')
+                        .card-body
+                            h5.card-title TOP 10 PROGRAMS FOR DATA SCIENCE IN USA
+                            p.card-text
+                                 | Lets have a look at the Top 10 programs for Data Science in USA. Data is the new oil of the modern digital economy. There is a huge amount of data around us and its expanding at an exponential rate...
+                  
+                            p.card-text
+                                small.text-muted Last updated 30-July-2022
+                            p
+                                a.card-link(href='blog-page-Top-10-Programs-for-Data-Science-in-USA') Read more
+                .col-md
+                    .card(style='width: 18rem;')
+                        img.card-img-top(src='../static/images/blog/Top-Universities-to-consider-to-study-in-Australia.jpg' alt='london')
+                        .card-body
+                            h5.card-title TOP UNIVERSITIES TO CONSIDER TO STUDY IN AUSTRALIA
+                            p.card-text
+                                | Australia! There is nothing like it. The Land Down Under is being preferred more and more for education among Indian students...
+                
+                            p.card-text
+                                small.text-muted Last updated 30-July-2022
+                            p
+                                a.card-link(href='blog-page-Top-Universities-to-consider-to-study-in-Australia') Read more
+                .col-md
+                    .card(style='width: 18rem;')
+                        img.card-img-top(src='../static/images/blog/Why-study-in-Germany-Study-the-German-way.jpg' alt='london')
+                        .card-body
+                            h5.card-title WHY STUDY IN GERMANY – STUDY THE GERMAN WAY
+                            p.card-text
+                               | Why Germany?
+                               | With nearly 400 universities and colleges, Germany or Deutschland as many know it, in the recent past, has become increasingly popular among students as a destination for higher studies...
+               
+                            p.card-text
+                                small.text-muted Last updated 30-July-2022
+                            p
+                                a.card-link(href='blog-page-Why-study-in-Germany-Study-the-German-way') Read more
+                
+
+        //- footer start
+
+        block footer
+            footer#footer
+                include footer.pug 
+                +footer        

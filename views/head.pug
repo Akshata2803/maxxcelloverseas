@@ -1,0 +1,30 @@
+mixin head
+        //- meta tags
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+
+        title Maxxcell Overseas #{title}
+        link(rel='stylesheet', href='../static/boot_css/bootstrap.min.css')
+        link(rel='stylesheet', href='../static/style.css')
+        
+        //- Google fonts
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap' rel='stylesheet')
+        
+        //- Bootstrap icon
+        link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css')
+
+        //- Owl Carousel
+        link(rel='stylesheet' href='../static/owlCarousel/owl.carousel.min.css')
+        link(rel='stylesheet' href='../static/owlCarousel/owl.theme.default.min.css')
+
+        block scripts
+            script(src=' ../static/index.js')
+            script(src=' ../static/boot_js/bootstrap.min.js')
+            
+            script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
+            
+            script(src="../static/owl.js") 
+            script(src='../static/owlCarousel/jquery.min.js')
+            script(src='../static/owlCarousel/owl.carousel.min.js')

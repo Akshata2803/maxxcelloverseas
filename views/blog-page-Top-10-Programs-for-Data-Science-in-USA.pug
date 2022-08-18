@@ -1,0 +1,108 @@
+doctype html 
+html
+  head
+    include head 
+    +head
+    
+    
+  body
+
+    block navbar
+
+        include navbar.pug
+        +navbar
+
+
+    block banner 
+    
+      block content
+        .container
+            .card.text-white
+                img.card-img(src='../static/images/blog/Top-10-Programs-for-Data-Science-in-USA.jpg' alt='study')
+
+      .container 
+        .row.g-2
+          .col-md-2
+            .mt-4.pt-4.position-sticky(style='top: 6rem;')
+              p
+                a(href='#2') Here are the Top 10 programs for Data Science in USA:
+                  
+              
+              
+         
+          .col-md-10
+                    
+            section#1.container.my-4
+              .row.featurette.bg-light.rounded-2
+                  //- .aboutMainclass.col-md-7.order-md-2.order-2
+                  h2.text-center
+                    | TOP 10 PROGRAMS FOR DATA SCIENCE IN USA
+                  br  
+                  p
+                    | Lets have a look at the Top 10 programs for Data Science in USA. Data is the new oil of the modern digital economy. There is a huge amount of data around us and its expanding at an exponential rate. Data Science consists of 3 pillars: Statistics and Machine Learning, Computer Science and Software Development and Domain Knowledge. Data Science deals with gathering information and extracting significant learning from it. Data science is generally used in research exercises. MSc in Data Science/Analytics is an ideal coursework for graduates aspiring to progress and increase their potential in mathematics, computing, engineering, and problem-solving skills.
+                  p 
+                    | USA is the largest data science and analytics market in the world. It is one of the most mature and innovative markets in data science and related technologies like machine learning and artificial intelligence. The major benefit of pursuing MS in the USA is to gain access to a huge number of job opportunities in the USA.
+                  p  
+                    | According to one IBM study, there will be a rapid growth in Data Science jobs, with 2.7 million new Data Scientist and Analytics jobs opening every year, by 2020. Some of the top employers hiring in this field are Facebook, Google, Amazon, eBay, Mozilla, IBM, EY, Accenture, Deloitte, Citi, HSBC, The Boeing Company, etc. and the some job titles offered are:
+                  li 	Business Intelligence Engineer
+                  li  Data Mining Specialist 
+                  li  Data Scientist
+                  li  Marketing Analytics Analyst
+                  li  Account Strategist
+                  p 
+                    | An entry-level position might get an average salary around $50,000-$75,000 per year.  According to University of San Francisco (2015), the median salary for a data analyst was $110,000 per year and reached up to a maximum of $130,000 per year. More than 95% graduates receive an offer of employment with the first three months of graduation from this program.
+            section#2.container
+              .row.featurette.bg-light.rounded-2
+                  //- .aboutMainclass.col-md-7.order-md-1.order-2
+                  h2.text-center
+                    | Here are the Top 10 programs for Data Science in USA:
+                    
+                  p
+                  ol
+                  
+                    | 1. Stanford University: Stanford Computer Science offers a concentration in Analytics and Info management.
+                  
+                  ol 
+                    | 2. Berkley offers a concentration in ‘Data Science and Systems’: EECS at UC Berkeley
+                  
+                  ol
+                    | 3. USC Viterbi: USC – Department of Computer Science – Viterbi School of Engineering – Data Science
+                   
+                  ol 
+                    | 4. NYU: Master of Science in Data Science – Center for Data Science
+                   
+                  ol 
+
+                    | 5. NYU Stern : Master of Science in Business Analytics
+                  
+                  ol 
+     
+                    | 6. Columbia University: Masters in Data Science
+                  
+                  ol 
+                    | 7. Cornell Engineering: Master of Engineering with a concentration in either Data Analytics or Information Technology
+                  
+                  ol
+                    | 8. Carnegie Mellon University: Very Large Information Systems – Carnegie Mellon University
+                   
+                  ol 
+                    | 9. Harvard take on Analytics/Data Science: Master of Science in CSE
+                   
+                  ol 
+                    |10. Paul G Allen School has great faculty doing work in data science for their computer science Masters: Professional Master’s Program, and offer concentration in ML and Big data: Computer Science & Engineering
+            
+            section#11.container.my-4
+              .row.featurette.bg-light.rounded-2
+                  //-.aboutMainclass.col-md-7.order-md-1.order-2
+                  h6.text-center
+                    | For any queries regarding the GRE exam, email us at info@maxxcell.in .
+    
+    
+    
+    
+    //- footer start
+
+    block footer
+        footer#footer
+            include footer.pug 
+            +footer

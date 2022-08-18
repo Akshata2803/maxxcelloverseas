@@ -1,0 +1,181 @@
+doctype html 
+html
+  head
+    include head 
+    +head
+     
+    
+  body
+
+    block navbar
+
+        include navbar.pug
+        +navbar
+
+    //- end navbar
+    block content
+    .container
+        .card.text-white
+            img.card-img(src='../static/images/IELTS.jpg' alt='study')
+            #insidePageBanner.card-img-overlay
+                #insidePageBanner-1
+                    h1 Write the heading here
+                    h5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, alias.
+                    a.btn.btn-primary(href='#')  Get Expert Advoice
+                #insidePageBanner-2
+                    h1 Write the heading here
+                    a.btn.btn-primary(href='#')  Get Expert Advoice
+    //- News and Events
+
+
+    section#mainBody.p-2
+    block main_news
+
+        .container
+            .row.text-center.g-4
+                
+                block mainBody
+                .col-md-9
+                    .bg-light.rounded
+                        .card-body
+                            h3.card-title.text-center.mb-3
+                                |Crack your IELTS exam in one shot with Maxxcell Overseas, Goa's best coaching institute since 2013. Book your slot now!
+                            ul.text-start(type='disc')
+                                li 9+ Years of Success    
+                                li 1500+ Students Trained     
+                                li 9/9 Band Achieved by the Student    
+                                li 6+ Years Experienced Faculty   
+                            p.text-start 
+                              |Maxxcell Overseas, Goa, empowers you with precise techniques and knowledge to ace your IELTS exam. Our foolproof study material expedites your IELTS preparations and takes your English proficiency to the next level. Our counseling team helps students keep track of upcoming exams dates to spare them from distractions. We also help them in IELTS registration. All in all, Maxxcell's customized syllabus for academic and general modules, and the team of experts help students stride on the band ahead and achieve their target score.
+                            p.text-start 
+                              |Don't worry even if you are a student or working professional, we layout customized plans and schedules for both. Register with us now and get the best IELTS coaching available in Goa! Register now!
+                            h6.card-title.text-start
+                              |Why IELTS is Maxxcell's favorite gateway exam? 
+                            p.text-start 
+                              |IELTS is an English proficiency test for study, migration or work. Over three million people take this test every year. IELTS is accepted by more than 11,000 employers, universities, schools and immigration bodies around the world.
+                            p.text-start
+                              |Lets know more about IELTS...
+                            h6.card-title.text-start
+                              |Why Maxxcell? 
+                            ul.text-start(type='disc')
+                                li 25 power packed IELTS sessions 
+                                li 2 full length Mock Tests  
+                                li Grammar and Vocabulary classes
+                                li Experienced And Professional Teachers
+                                li Flexible Schedules And Fast Track Batches 
+                                li Comprehensive and Rigorous study material 
+                                li Individual attention based on adaptive learning 
+                                li Strong Focus on Concepts
+                                li Free Exam Registration Assistance 
+                            p.text-start 
+                              |All our students have a thing for us... 
+                            h6.card-title.text-start
+                              |More curious about IELTS coaching?
+                            p.text-start 
+                              | Dear friend, you can just sit back and relax while we help you solve all your IELTS coaching queries through these FAQs. Just skim through and find the answers.
+                                                       
+                                                                                    	                         
+                block news
+                .col-md
+                    .position-sticky(style='top: 6rem;')
+                        .bg-light.rounded.position-sticky
+                            .card-body.text-start
+                                h3.card-title.mb-3
+                                    a.text-dark(href='https://www.google.com/' style='text-decoration: none;') News and Events
+                                include news_events.pug
+                                +news_events
+
+
+    //- End News and Events
+
+
+    //- FAQ start
+    block faq 
+
+    section#faq.p-4
+      .container.py-4
+        .text-center
+          h1 F.A.Q.
+          p
+            | Although we have shared all the information with you on our website, if there are any queries that are unaddressed,
+            
+            br
+            | you can find the answers to them below in our FAQs:
+        #accordionFlushExample.accordion.accordion-flush
+          .accordion-item
+            h2#flush-headingOne.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseOne' aria-expanded='false' aria-controls='flush-collapseOne')
+                | What is IELTS?
+            #flush-collapseOne.accordion-collapse.collapse(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                 | The International English Language Testing System (IELTS) is a standardized and widely recognized English language assessment that evaluates the English language proficiency of non-native English speakers who wish to study or migrate to an English-speaking country
+                 
+          .accordion-item
+            h2#flush-headingTwo.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseTwo' aria-expanded='false' aria-controls='flush-collapseTwo')
+                | How is IELTS exam conducted?
+            #flush-collapseTwo.accordion-collapse.collapse(aria-labelledby='flush-headingTwo' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | IELTS is conducted in both ways; online and offline. You can choose the pattern that suits you. 
+          .accordion-item
+            h2#flush-headingThree.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseThree' aria-expanded='false' aria-controls='flush-collapseThree')
+                | When can I take IELTS?
+            #flush-collapseThree.accordion-collapse.collapse(aria-labelledby='flush-headingThree' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | The IELTS test is conducted several times throughout the year. The candidate can choose a date that fits their schedule.
+                
+          .accordion-item
+            h2#flush-headingFour.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFour' aria-expanded='false' aria-controls='flush-collapseFour')
+                | Is IELTS exam conducted in Goa?
+            #flush-collapseFour.accordion-collapse.collapse(aria-labelledby='flush-headingFour' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | Fortunately, YES, paper based IELTS is conducted in Goa. Once you register for the exam and select Goa as your preferred location, you will get your exam center in Goa.
+         
+          .accordion-item
+            h2#flush-headingFive.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFive' aria-expanded='false' aria-controls='flush-collapseFive')
+                | Is IELTS academic easier than IELTS general?
+            #flush-collapseFive.accordion-collapse.collapse(aria-labelledby='flush-headingFive' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | The English reading and writing sections for IELTS Academics are more advanced. Therefore, IELTS General is comparatively easier and more straightforward.
+          .accordion-item
+            h2#flush-headingSix.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseSix' aria-expanded='false' aria-controls='flush-collapseSix')
+                | Which IELTS test should I take?
+            #flush-collapseSix.accordion-collapse.collapse(aria-labelledby='flush-headingSix' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | If you are planning to pursue an undergraduate or postgraduate course in an English-speaking environment, or migrate for professional registration, then you must take up the IELTS Academic test. 
+                | If you are migrating to an English-speaking country or applying for secondary training programs and work experience, you can opt for the IELTS General test.
+          .accordion-item
+            h2#flush-headingSeven.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseSeven' aria-expanded='false' aria-controls='flush-collapseSeven')
+                | Is the IELTS test completed in one day?
+            #flush-collapseSeven.accordion-collapse.collapse(aria-labelledby='flush-headingSeven' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | The listening, reading, and writing sections should be completed together on the same day. The speaking session can be taken on the same day or 3 days before or after the actual test date.
+          .accordion-item
+            h2#flush-headingEight.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseEight' aria-expanded='false' aria-controls='flush-collapseEight')
+                | What can I bring into the IELTS test room?
+            #flush-collapseEight.accordion-collapse.collapse(aria-labelledby='flush-headingEight' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | The candidate must take their identification document. Along with this, the candidate will be allowed to take a pen/pencil and an eraser. 
+ 
+          .accordion-item
+            h2#flush-headingNine.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseNine' aria-expanded='false' aria-controls='flush-collapseNine')
+                | Does IELTS exam have negative marking? 
+            #flush-collapseNine.accordion-collapse.collapse(aria-labelledby='flush-headingNine' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | Nope. Unlike many other exams, IELTS does not have any negative marking. 
+
+
+
+        //- footer start
+
+    block footer
+        footer#footer
+            include footer.pug 
+            +footer

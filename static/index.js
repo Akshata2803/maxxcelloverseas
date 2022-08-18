@@ -1,0 +1,1 @@
+console.log("Shyam is an intelligent man. Written in index.js");

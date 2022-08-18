@@ -1,0 +1,46 @@
+mixin navbar 
+
+    nav.navbar.sticky-top.navbar-expand-lg.navbar-light.bg-light
+        .container-fluid
+            a.navbar-brand(href='/')
+                img(src='../static/images/Maxxcell-Overseas-no-bg-Colour.png' alt='Maxxcell Logo')
+            button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarSupportedContent.collapse.navbar-collapse
+                ul.navbar-nav.ms-auto.mb-2.mb-lg-0
+                    li.nav-item
+                        a.nav-link(aria-current='page' href='/about') About
+                    li.nav-item.dropdown
+                        a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                            | Study Destination
+                        ul.dropdown-menu(aria-labelledby='navbarDropdown')
+                            li
+                                a.dropdown-item(href='/study-in-uk') Study in UK
+                            li
+                                a.dropdown-item(href='/study-in-usa') Study in USA
+                            li
+                                a.dropdown-item(href='/study-in-canada') Study in Canada
+                            li
+                                a.dropdown-item(href='/study-in-ireland') Study in Ireland
+                            li
+                                a.dropdown-item(href='/study-in-australia') Study in Australia
+                            
+                    li.nav-item.dropdown
+                        a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                         | Exam Preparation
+                        ul.dropdown-menu(aria-labelledby='navbarDropdown')
+                            li
+                                a.dropdown-item(href='/ielts') IELTS
+                            li
+                                a.dropdown-item(href='/gre') GRE
+                            li
+                                a.dropdown-item(href='/toefl') TOEFL
+                            
+                        li.nav-item
+                                a.nav-link(href='our-services') Our Services
+                        
+                        li.nav-item
+                                a.nav-link(href='/blogs-list') Blogs
+                        //- li.nav-item
+                        //-         a.nav-link(href='/contact-us') Contact Us
+                        

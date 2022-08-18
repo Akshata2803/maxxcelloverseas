@@ -1,0 +1,61 @@
+doctype html 
+html
+  head
+    include head 
+    +head
+     
+    
+  body
+
+    block navbar
+
+        include navbar.pug
+        +navbar
+
+    //- end navbar
+    
+    //- News and Events
+
+
+    section#mainBody.p-2
+    block main_news
+
+        .container
+            .row.text-center.g-4
+                
+                block mainBody
+                .col-md-12
+                    .bg-light.rounded
+                        .card-body
+                            h3.card-title.text-center.mb-3
+                                | REFUND POLICY
+                            h5.card-title.text-start 
+                              | Classroom Program
+                            p.text-start 
+                              | We follow a strict No Refund policy. To help you make an informed decision, all our classroom courses allow you to a demo class of the course (usually 1 class of the course) before you enroll for the course.Once you make the payment, the fees CAN NOT be refunded to you under any circumstances.
+                            
+                            h5.card-title.text-start  
+                              | Online Classes
+                            p.text-start
+                              | We follow a strict No Refund policy. To help you make an informed decision, all our online courses allow you to try a part of the course (usually about 10% of the course) before you enroll for the course.
+                            p.text-start
+                              | Once you make the payment the fees CAN NOT be refunded to you under any circumstances.
+                             
+                           
+                           
+
+
+              
+
+
+    
+
+
+    
+            
+        //- footer start
+
+    block footer
+        footer#footer
+            include footer.pug 
+            +footer

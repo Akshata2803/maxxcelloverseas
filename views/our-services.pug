@@ -1,0 +1,105 @@
+doctype html 
+html
+  head
+    include head 
+    +head
+     
+    
+  body
+
+    block navbar
+
+        include navbar.pug
+        +navbar
+
+    //- end navbar
+    block content
+    .container
+        .card.text-white
+            img.card-img(src='../static/images/our-services.jpg' alt='study')
+            #insidePageBanner.card-img-overlay
+                #insidePageBanner-1
+                    h1 Write the heading here
+                    h5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, alias.
+                    a.btn.btn-primary(href='#')  Get Expert Advoice
+                #insidePageBanner-2
+                    h1 Write the heading here
+                    a.btn.btn-primary(href='#')  Get Expert Advoice
+    //- News and Events
+
+
+    section#mainBody.p-2
+    block main_news
+
+        .container
+            .row.text-center.g-4
+                
+                block mainBody
+                .col-md-9
+                    .bg-light.rounded
+                        .card-body
+                            h3.card-title.text-center.mb-3
+                                | Career Counseling & Country/University Selection
+                                
+                            p.text-start 
+                              | Our knowledgeable and expert overseas counselors assist students in selecting a foreign university & program that are a perfect match for their abilities, interests, academics, and financial situation.We at Maxxcell consider work not just as a means of generating income, but also as a means of developing both intellect and stature, therefore we provide intelligent and career guidance to students that come to us. Our career advisors, who have years of experience, will assist you in selecting a course and university that is appropriate for your talent and skill. We endeavor to provide you with the finest course and country possible, taking into account the changing world, employment market, personal aspirations, aptitude, personal finances, and other factors.
+
+                            h6.card-title.text-start 
+                              | IELTS/GRE- Pre-requisite Exam Preparation
+                            p.text-start 
+                              | Academic requirements are set by the majority of international educational institutions and universities. Certain standardized tests are required to meet specific requirements by study abroad universities. The students' grades play an important part in determining their chances of admission to selected universities.
+                            p.text-start   
+                              | We have professional and accredited faculty at Maxxcell that can provide thorough IELTS/GRE guidance to help students attain the best results. Each class has a limited number of students, ensuring that each student receives individual attention. Throughout the course, our qualified IELTS/GRE instructors are ready to interact with students and answer their questions. We provide students with flexible IELTS/GRE training programs that include personalized coaching and practice tests, allowing them to achieve remarkable results.
+                            h6.card-title.text-start  
+                              | Preparing SOP/ LOR and Other University Application Documents
+                            p.text-start
+                              | You introduce yourself to the university when you submit an application. It must be perfect and assist you in presenting yourself in the best possible light. Maxxcell understands the critical value of your application form. We have standard surveys that you must complete in order for us to determine how to effectively exploit your successes. Before finalising your SOPs, LORs, and essays, we hold multiple brainstorming meetings with you. Your CV will also be tailored to your profile and chosen colleges.
+                            
+                      
+                            h6.card-title.text-start 
+                              | Financial Assistance for Studying Abroad
+                            p.text-start
+                              | From loan applications to documentation, we provide financial assistance all through the way. We can  assist you as your personal financial advisor to contact public and national banks to ensure you have a worry-free education loan to cover tuition and living expenses while studying abroad. 
+                            p.text-start   
+                              | We at Maxxcell recognize that the majority of students who want to pursue a foreign education require bank loans, and that obtaining them can be difficult for both parents and students due to the numerous trips to the bank, the submission of various paperwork, and so on. This is where our aid with bank loans comes in handy. We offer trustworthy advice and help with student loans.
+                            h6.card-title.text-start 
+                              | VISA Assistance 
+                            P.text-start 
+                              | From submission of application to document preparation, we provide VISA assistance that satisfies the most demanding requirements expected by visa offices in each nation. Our ViSA Experts, who have years of expertise and are aware of the latest guidelines and standards, ensure high visa success rates. Regardless of the country, we have a high success record when it comes to student visas.   
+                            p.text-start 
+                              | We at Maxxcell stay up to date on visa restrictions from various countries, resulting in a quick turnaround. Every single detail is analyzed by our internationally qualified advisors, from arranging relevant visa paperwork to preparing visa files. Our aid does not end there; we also provide mock interview sessions to help students prepare for their visa interviews. Please contact us if you are seeking for a hassle-free visa application.
+                            h6.card-title.text-start 
+                              | Pre-departure training
+                               
+                            p.text-start 
+                              | We need the students to be ready to adapt to a new culture, education methodology, food, weather, friend circle, and so on. 
+                            p.text-start  
+                              | From practical issues like passports and student visas, health and safety, and academics to cultural adjustment, intercultural learning, and diversity awareness, this orientation covers it all. Furthermore, we advise students on what to expect throughout their education abroad program, covering lodging, finances, transportation, and emergency contacts. 
+                            p.text-start 
+                              | We prepare a candidate with the appropriate expectations in order to make the transition as smooth as possible. 
+                           
+                            
+
+
+                block news
+                .col-md
+                    .position-sticky(style='top: 6rem;')
+                        .bg-light.rounded.position-sticky
+                            .card-body.text-start
+                                h3.card-title.mb-3
+                                    a.text-dark(href='https://www.google.com/' style='text-decoration: none;') News and Events
+                                include news_events.pug
+                                +news_events
+
+
+    //- End News and Events
+
+
+    
+            
+        //- footer start
+
+    block footer
+        footer#footer
+            include footer.pug 
+            +footer

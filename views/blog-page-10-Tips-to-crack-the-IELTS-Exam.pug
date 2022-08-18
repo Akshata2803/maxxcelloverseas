@@ -1,0 +1,104 @@
+doctype html 
+html
+  head
+    include head 
+    +head
+    
+    
+  body
+
+    block navbar
+
+        include navbar.pug
+        +navbar
+
+
+    block banner 
+    
+      block content
+        .container
+            .card.text-white
+                img.card-img(src='../static/images/blog/10-Tips-to-crack-the-IELTS-Exam.jpg' alt='study')
+
+      .container 
+        .row.g-2
+          .col-md-2
+            .mt-4.pt-4.position-sticky(style='top: 6rem;')
+              p
+                a(href='#2') Below are 10 tips that will help you crack IELTS exam:
+                  
+           
+              
+         
+          .col-md-10
+                    
+            section#1.container.my-4
+              .row.featurette.bg-light.rounded-2
+                  //- .aboutMainclass.col-md-7.order-md-2.order-2
+                  h2.text-center
+                    | 10 TIPS TO CRACK THE IELTS EXAM  
+                  br  
+                  p
+                    | IELTS is the International English Language Testing System, the world’s most popular English language proficiency test for higher education and global immigration. It assess four basic English language skills – Reading, Writing, Listening and Speaking. In order to crack IELTS exam, there are some guidelines we need to follow. 
+                  p 
+                    | The IELTS exam is a hand-written exam, however the IELTS speaking test is a face-to-face conversation with a real person. It is internationally accepted, mainly in the U.K, U.S.A, Australia, Canada, New Zealand, Dubai and Europe. The exam duration is 2 hours and 45 minutes, with no breaks. The scoring system is on a 0-9 score scale. The score of the IELTS exam is valid for 2 years. Now lets see how can we crack IELTS exam.
+
+ 
+                
+
+            section#2.container
+              .row.featurette.bg-light.rounded-2
+                  //- .aboutMainclass.col-md-7.order-md-1.order-2
+                  h2.text-center
+                    | Below are 10 tips that will help you crack IELTS exam:
+                    
+                  p
+                  ol 
+                    | 1.	In the Writing Section, pay attention to the number of words required for each task;you will lose marks if you do not write at least 150 words for Task 1 and at least 250 words for Task 2. Learn to recognize how long 150 and 250 words look in your handwriting; you will not have time to count during the test.
+                  p 
+                  ol 
+                    | 2.	Try to Google frequently misspelled words. There are words we feel we know the spellings for, but mostly the auto-correct corrects us. And it will come to a surprise that most commonly used words are often misspelled.
+                  p 
+                  ol 
+                    | 3.	In the Speaking Section, develop your own answers. Do not learn prepared answers; the examiner is trained to spot this and will change the question.Express your opinions; you will be assessed on your ability to communicate.
+                  p 
+                  ol 
+                    | 4.	Start reading English as it suits you – it could be newspapers, magazines, blogs or anything. You can also start watching English series or news channels to be familiar with the accents.
+                  p 
+                  ol 
+                    | 5.	In the Listening Section, do not panic if you think the topic is too difficult or the speaker is too fast; relax and tune in. Read, write and listen at the same time.Focus precisely on what you are asked to do in completion type questions.
+                  p 
+                  ol 
+                    | 6.  Whenever you reply ‘Yes’ or ‘No’ to the Examiner’s questions, add more details to your answer. In each case, aim to explain at least one point.
+                  p 
+                  ol 
+                    | 7.	In the Reading Section, look out for the title, headings and any special features such as capital letters, underlining, italics, figures, graphs and tables. Make sure that you understand the questions and follow instructions carefully. Pay attention to timing; do not spend too long on one passage or question.
+                  p 
+                  ol 
+                    | 8.  As you read, don’t try to understand the precise meaning of every word or phrase. You don’t have time, and those parts of the text might not be tested anyway.
+                  p 
+                  ol 
+                    | 9.  If you do not know the answer to a question, attempt it but do not waste time; move quickly onto the next one. Be careful with your spelling and grammar.
+                  p 
+                  ol 
+                    | 10.	Analyze each task properly and spend some time making notes. Highlight or underline key words in the tasks to make sure that you focus on what you have to do
+
+           
+           
+           
+           
+            section#3.container
+              .row.featurette.bg-light.rounded-2
+                  //-.aboutMainclass.col-md-7.order-md-1.order-2
+                  h6.text-center
+                    | For any queries regarding the GRE exam, email us at info@maxxcell.in .
+    
+    
+    
+    
+    //- footer start
+
+    block footer
+        footer#footer
+            include footer.pug 
+            +footer

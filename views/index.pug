@@ -1,0 +1,347 @@
+doctype html 
+html
+  head
+    include head 
+    +head
+    
+    
+  body
+
+    block navbar
+
+        include navbar.pug
+        +navbar
+
+    //- end navbar
+
+    //- home page banner start 
+    block banner 
+      section#banner
+        div
+          .row
+            #topBannerone.col-md-6.topBanner
+              .text-center
+                h1 A one stop solution for all your needs to Study Abraod
+                .row.m-2.p-4.g-2
+                  .col-md-4
+                    i.bi.bi-check-square.text-primary
+                    |  IELTS, GRE Preparation
+                  .col-md-4
+                    i.bi.bi-check-square.text-primary
+                    span  Universities Selection
+                  .col-md-4
+                    i.bi.bi-check-square.text-primary
+                    span  Study VISA Assistance
+                button.btn.btn-primary.m-2.px-5(type='button') Get Expert Advice
+            #topBannerimg.col-md-6.topBanner
+              div
+                img.responsiveImg(src='../static/images/maxxcell-overseas-education-services.jpg' alt='responsive imgae')
+
+    //- Why Maxxcell 
+    block whyMaxxcell 
+    section#whyMaxxcell.p-2
+      .text-center.m-4.p-4
+        h2 Empowering you with right knowledge, coaching & counseling for incredible career abroad!
+         
+      .container
+        .row.text-center.g-4
+          .col-md
+            #whyMaxxcellCard.card.bg-primary.text-light
+              .card-body.text-center
+                a.btn.text-light(href='#')
+                  .h1.mb-3
+                    i.bi.bi-laptop
+                  h3.card-title.mb-3 Exam Preparation
+                  p
+                    | We offer coaching classes for IELTS, TOEFL, GRE, SAT, GMAT with Offline and Online mode.
+                    
+                  
+          .col-md
+            #whyMaxxcellCard.card.bg-warning.text-light
+              .card-body.text-center
+                a.btn.text-light(href='#')
+                  .h1.mb-3
+                    i.bi.bi-person-square
+                  h3.card-title.mb-3 Services Offered
+                  p.card-text
+                    | Career Counselling, Universities Selection, SOP witing, Financial Domentation Assistance, VISA
+                    | Assistance
+                  
+          .col-md
+            #whyMaxxcellCard.card.bg-success.text-light
+              .card-body.text-center
+                a.btn.text-light(href='#')
+                  .h1.mb-3
+                    i.bi.bi-geo-alt
+                  h3.card-title.mb-3 Study Destination
+                  p.card-text
+                    | UK, USA, Canada, New Zealand, Australia, Germany and Europe. Select Country of Study and we will
+                    | assisst
+                    | you to Acieve your dream.
+                  
+          .col-md
+             #whyMaxxcellCard.card.bg-danger.text-light
+              .card-body.text-center
+                a.btn.text-light(href='#')
+                  .h1.mb-3
+                    i.bi.bi-people
+                  h3.card-title.mb-3 Maxxcell Achievers
+                  p.card-text
+                    | Students that have gone through our regorous training courses have achieved 100% conversion in
+                    | preferred
+                    | course in Top Universities Abroad.
+                  
+
+    
+
+
+
+    //- main body content
+    
+    block main_news
+    section#mainBody.p-2
+    
+
+        .container
+            .row.g-4
+                
+                block mainBody
+                .col-md-9
+                  .card.border-none
+                    .bg-light.rounded
+                        .card-body
+                            h3.card-title.mb-3.text-center
+                                h2.text-center
+                                  | Welcome to Maxxcell Overseas Education Services 
+                                br  
+                                p
+                                  |Goa's most trusted institute since 2013 for overseas counselling and IELTS/GRE Training. Maxxcell takes pride in its legacy of fulfilling the ambition of more than 200 students by placing them in their dream universities across the globe and bagging upto 100% scholarships for many of them. Our students roar and shine in the competition by achieving 9/9 in IELTS and enter the best universities by claiming winning scores of 335/340 in GRE.
+                                  br
+                                  br
+
+                                  |Our experienced faculty members and expert counsellors love to see a victorious smile on students' face and hence never think twice before going an extra mile for them. From the IELTS/ GRE preparation to Admission Counselling and VISA Process we hand hold students at every step of their study abroad journey! And trust us, we love to cater them!
+                                  br
+                                  br
+
+                                  |Maxxcell's yet another distinguishing feature is its 
+                                  b 98% Visa Success Rate. 
+                                  |With this track record, we have sent hundreds of students to their dream destinations and are in the process of sending many more. We understand that applying for VISA is an overwhelming task. With enormous paperwork and documentation, it can break the most robust soul on this earth, but not us! Yes, Maxxcell's wise sages can shoo your VISA woes by supporting you at every step. Our experts have the necessary experience and knowledge to help you sail through this complex visa application process and claim your visa with greater confidence! 
+                              
+                                  br
+                                  br
+                                .text-center
+                                  a.btn.btn-primary(href='/about') Read More
+                    
+                    
+                    //- Services button
+                    .p-2
+                      .row.text-center.g-4
+                        .col-6.col-sm-2
+                          a.text-dark(href='/ielts' style='text-decoration: none;')
+                            #servicesBtn.card.btn
+                              .card-body.text-center
+                                h5.card-title IELTS
+                        .col-6.col-sm-2
+                          a.text-dark(href='/toefl' style='text-decoration: none;')
+                            #servicesBtn.card.btn
+                              .card-body.text-center
+                                h5.card-title TOEFL
+                        .col-6.col-sm-2
+                          a.text-dark(href='/gre' style='text-decoration: none;')
+                            #servicesBtn.card.btn
+                              .card-body.text-center
+                                h5.card-title GRE
+                        .col-6.col-sm-2
+                          a.text-dark(href='/gmat' style='text-decoration: none;')
+                            #servicesBtn.card.btn
+                              .card-body.text-center
+                                h5.card-title GMAT
+                        .col-6.col-sm-2
+                          a.text-dark(href='/our-services' style='text-decoration: none;')
+                            #servicesBtn.card.btn
+                              .card-body.text-center
+                                h6.card-title Universities Selection
+                        .col-6.col-sm-2
+                          a.text-dark(href='/our-services' style='text-decoration: none;')
+                            #servicesBtn.card.btn
+                              .card-body.text-center
+                                h6.card-title VISA Assistance
+
+                
+                
+                
+                block news
+                .col-md
+                    
+                    .bg-light.rounded
+                        .card-body.text-start
+                            h3.card-title.mb-3
+                                a.text-dark(href='https://www.google.com/' style='text-decoration: none;') News and Events
+                            
+                            //- news and event include
+
+                            include news_events.pug
+                            +news_events
+
+
+                            //- End news and Events
+
+                    .my-2
+                          //- Acheivers photos
+
+                          include acheivers.pug
+                          +acheivers
+
+  
+
+    
+    //- Testimonial start
+
+    section#tesstimonial.p-2
+      include testimonial.pug 
+      +testimonial
+
+
+    //- Blog section
+    block blogHomepage 
+    
+    section#blogHomepage
+      .container
+        .m-4.text-center
+          h2 Treasure of knowledge
+        .row.g-4
+          .col-md
+            .card(style='width: 18rem;')
+              img.card-img-top(src='../static/images/blog/10-Tips-To-Score-A-perfect-170-In-GRE-Quant.jpg' alt='london')
+              .card-body
+                h5.card-title 10 TIPS ON HOW TO SCORE PERFECT 170 IN GRE QUANT 
+                p.card-text
+                  |  Graduate Record Examination (GRE) is an international standardized test required for admission into Graduate schools in the United States of America...
+                  
+                p.card-text
+                  small.text-muted Last updated 30-July-2022
+                p 
+                  a.card-link(href='/blog-page-10-tips-to-score-a-perfect-170-In-gre-quant') Read more
+          .col-md
+            .card(style='width: 18rem;')
+              img.card-img-top(src='../static/images/blog/10-Tips-to-crack-the-IELTS-Exam.jpg' alt='london')
+              .card-body
+                h5.card-title 10 TIPS TO CRACK THE IELTS EXAM
+                p.card-text
+                  | IELTS is the International English Language Testing System, the world’s most popular English language proficiency test for higher education and global immigration...
+                  
+                p.card-text
+                  small.text-muted Last updated 30-July-2022
+                p
+                  a.card-link(href='/blog-page-10-Tips-to-crack-the-IELTS-Exam') Read more
+          .col-md
+            .card(style='width: 18rem;')
+              img.card-img-top(src='../static/images/blog/10-Tips-to-remember-before-writing-a-professional-SOP-for-higher-Ranked-Universities.jpg' alt='london')
+              .card-body
+                h5.card-title 10 TIPS TO REMEMBER BEFORE WRITING A PROFESSIONAL STATEMENT OF PURPOSE (SOP) FOR HIGHER RANKED UNIVERSITIES
+                p.card-text
+                  | The Statement of Purpose (SOP) is an application essay that is often asked by universities abroad...
+                  
+                p.card-text
+                  small.text-muted Last updated 30-July-2022
+                p
+                  a.card-link(href='/blog-page-10-Tips-to-remember-before-writing-a-professional-SOP-for-higher-Ranked-Universities') Read more
+          .col-md
+            .card(style='width: 18rem;')
+              img.card-img-top(src='../static/images/blog/Top-10-Programs-for-Data-Science-in-USA.jpg' alt='london')
+              .card-body
+                h5.card-title TOP 10 PROGRAMS FOR DATA SCIENCE IN USA
+                p.card-text
+                  | Lets have a look at the Top 10 programs for Data Science in USA. Data is the new oil of the modern digital economy. There is a huge amount of data around us and its expanding at an exponential rate...
+                  
+                p.card-text
+                  small.text-muted Last updated 30-July-2022
+                p
+                  a.card-link(href='blog-page-Top-10-Programs-for-Data-Science-in-USA') Read more
+          .col-md
+            .card(style='width: 18rem;')
+              img.card-img-top(src='../static/images/blog/Top-Universities-to-consider-to-study-in-Australia.jpg' alt='london')
+              .card-body
+                h5.card-title TOP UNIVERSITIES TO CONSIDER TO STUDY IN AUSTRALIA
+                p.card-text
+                  | Australia! There is nothing like it. The Land Down Under is being preferred more and more for education among Indian students...
+                
+                p.card-text
+                  small.text-muted Last updated 30-July-2022
+                p
+                  a.card-link(href='blog-page-Top-Universities-to-consider-to-study-in-Australia') Read more
+          .col-md
+            .card(style='width: 18rem;')
+              img.card-img-top(src='../static/images/blog/Why-study-in-Germany-Study-the-German-way.jpg' alt='london')
+              .card-body
+                h5.card-title WHY STUDY IN GERMANY – STUDY THE GERMAN WAY
+                p.card-text
+                  | Why Germany?
+                  | With nearly 400 universities and colleges, Germany or Deutschland as many know it, in the recent past, has become increasingly popular among students as a destination for higher studies...
+               
+                p.card-text
+                  small.text-muted Last updated 30-July-2022
+                p
+                  a.card-link(href='blog-page-Why-study-in-Germany-Study-the-German-way') Read more
+
+    //- FAQ start
+    block faq 
+
+    section#faq.p-4
+      .container.py-4
+        .text-center
+          h1 F.A.Q.
+          p
+            | Although we have shared all the information with you on our website, if there are any queries that are unaddressed,
+            
+            br
+            | you can find the answers to them below in our FAQs:
+        #accordionFlushExample.accordion.accordion-flush
+          .accordion-item
+            h2#flush-headingOne.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseOne' aria-expanded='false' aria-controls='flush-collapseOne')
+                | What is the cost of your services?
+            #flush-collapseOne.accordion-collapse.collapse(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | We are a premium service provider. Your Profile Evaluation,Un-biased University  Recommendation, SOP/LOR/Resume review and Application Assistance is completely free. You can get the help of our Premium Counseling Experts in University/Course recommendation refinement, SOP Story lining and editing support for a service fee. Request a call back to know more.
+          .accordion-item
+            h2#flush-headingTwo.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseTwo' aria-expanded='false' aria-controls='flush-collapseTwo')
+                | Why Maxxcell Overseas Education Consultancy?
+            #flush-collapseTwo.accordion-collapse.collapse(aria-labelledby='flush-headingTwo' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | We are the most trusted organization for overseas counseling and exam preparation. Our team of certified counselors and number of students studying abroad is the reason good enough to associate with us for your study abroad journey. We will support your international education journey not only in a transactional manner but also through your needs of accommodation, on-campus guidance, part-time jobs, final placements and immigration readiness. We are always available to you through our transparent communication platform. 
+          .accordion-item
+            h2#flush-headingThree.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseThree' aria-expanded='false' aria-controls='flush-collapseThree')
+                | Is there an admission guaranty?
+            #flush-collapseThree.accordion-collapse.collapse(aria-labelledby='flush-headingThree' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | No one can guarantee admission. If they do, they are lying. We maximize your admission chances by applying to 4-7 universities. Till date, we have % admit record for over + student applicants. Check our testimonials.
+                
+          .accordion-item
+            h2#flush-headingFour.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFour' aria-expanded='false' aria-controls='flush-collapseFour')
+                | How do I get started?
+            #flush-collapseFour.accordion-collapse.collapse(aria-labelledby='flush-headingFour' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | Your journey with Maxxcell is simple. Drop a text on WhatsApp number 8806788552.
+         
+          .accordion-item
+            h2#flush-headingFive.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFive' aria-expanded='false' aria-controls='flush-collapseFive')
+                | Will you help me with my SOP?
+            #flush-collapseFive.accordion-collapse.collapse(aria-labelledby='flush-headingFive' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | Yes, we provide students with a list of questions that help you write your first draft of SOP post which our experts guide you on the subtle levels like language, tone, snytax and style.
+          
+
+
+
+
+    //- footer start
+
+    block footer
+        footer#footer
+            include footer.pug 
+            +footer

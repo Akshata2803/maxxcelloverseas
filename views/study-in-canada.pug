@@ -1,0 +1,224 @@
+doctype html 
+html
+  head
+    include head 
+    +head
+     
+    
+  body
+
+    block navbar
+
+        include navbar.pug
+        +navbar
+
+    //- end navbar
+    block content
+    .container
+        .card.text-white
+            img.card-img(src='../static/images/Study-In-Canada.jpg' alt='study')
+            #insidePageBanner.card-img-overlay
+                #insidePageBanner-1
+                    h1 Write the heading here
+                    h5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, alias.
+                    a.btn.btn-primary(href='#')  Get Expert Advoice
+                #insidePageBanner-2
+                    h1 Write the heading here
+                    a.btn.btn-primary(href='#')  Get Expert Advoice
+    //- News and Events
+
+
+    section#mainBody.p-2
+    block main_news
+
+        .container
+            .row.text-center.g-4
+                
+                block mainBody
+                .col-md-9
+                    .bg-light.rounded
+                        .card-body
+                            h3.card-title.text-center.mb-3
+                                | Study in Top Universities in Canada with Maxxcell!
+                                
+                            p.text-start 
+                              |IELTS Prep/University Shortlisting/Applications/ Scholarships/Education Loans/ Visa
+                            p.text-start 
+                              |No matter if it is an Ivy League college, University of Toronto, British Columbia, or any other university... Maxxcell helps students get into the best Canadian universities.
+                            p.text-start 
+                              |Let's crack the code of getting into topmost Canadian Colleges & Universities!
+                            p.text-start 
+                              |Getting into a top Canadian university, such as the University of Toronto, can be a difficult and competitive procedure with low admission rates. Maxxcell's experienced abroad counselors ensure that our students' applications stand out in the worldwide candidate pool by addressing every part of the university application with the same dedication. Our team of expert counselors helps you  
+                            ul.text-start(type='disc')
+                                li Explore study options in the Canada
+                                li Select the right institution and university 
+                                li Find the right course
+                                li Apply to multiple universities
+                                li Obtaining loans/strengthening your financial documents
+                                li To bag a decent scholarship
+                                li To ensure the visa approval
+                                li Understand pre-departure details 
+                            h6.card-title.text-start 
+                              |WHY STUDY IN CANADA?
+                            p.text-start
+                              |Canada frequently ranks as one of the top countries, and it is now ranked first in terms of quality of life.  Studying in Canada will provide you with a globally recognized degree from many of the world's best instructors and academics. It might lead to more lucrative job opportunities back home. It will provide you with access to our four gorgeous seasons, wide-open areas, plentiful wildlife, multicultural diversity, a clean environment, and wonderful quality of life. Also, you getting a Canadian student visa is easier compared to other countries, at the very least.   
+                        
+                        
+                              p 
+                                ul.text-start(type='disc')
+                                    li Excellent academia.
+                                    li Numerous Research Choices.
+                                    li Globally recognized.
+                                    li Flexible Education system.
+                                    li Budget-friendly destination.            
+                                    li Diverse and culturally vibrant.
+                                    li Counted as one of the safest places
+                                    li Students earn decent income while learning 
+                                    li Immigration is easy than in other countries.
+                                    
+                                    
+                                    
+                            h6.card-title.text-start
+                              |CANADIAN EDUCATION SYSTEM
+                              p.text-start
+                              
+                                |Education across Canada is generally divided into four stages: pre-school or early childhood education; primary or elementary education; secondary education and post-secondary or tertiary education, which includes college and university programs and vocational/technical schooling.
+                                    
+                                  
+                            h6.card-title.text-start
+                              |Degrees offered.
+                            
+                            h6.card-title.text-start
+                              |Bachelor's Degree
+                              p.text-start 
+                               |Undergraduate degrees in the arts or sciences are typically completed in three, four, or five years (e.g., according to the province and the availability of classes) for full-time students
+                               
+                                
+                             
+                          
+                            
+                            h6.card-title.text-start
+                             |Master's degree
+                             p.text-start
+                              |Graduate degrees, such as a Master of Arts or Master of Science, typically take two years to complete. 
+                               
+                            h6.card-title.text-start 
+                             |Doctoral Degree
+                             p.text-start  
+                              |A Doctorate or PhD is a specialized post-graduate degree that can be completed in between 3-6 years.
+                               
+                                
+                            h6.card-title.text-start 
+                              |INTAKE
+                              p 
+                                ul.text-start(type='disc')
+                                     li Winter Intake: January
+                                     li Fall Intake: September
+                                     li Spring Intake: May
+                                     
+                                     
+                            h6.card-title.text-start
+                              |WORK RIGHTS & STAY BACK
+                              p.text-start 
+                               |In Canada, students without work permits can work up to 20 hours per week, and full time during scheduled breaks.
+                            p.text-center 
+                              table(style='width:100%;' border='1')
+                              
+                              
+                                thead
+                                  tr
+                                    th Duration of Course
+                                    th Duration of Stay Back in Canada
+                                tr
+                                  td Less Than 8 Months
+                                  td No Stay Back Allowed
+                                tr
+                                  td More than 8 Months &amp; Less than 2 Years
+                                  td As Long as the Duration of the Course
+                                tr
+                                  td 2 Years or More than 2 Years
+                                  td 3 Years of Stay Back
+                                   
+                            p.text-start   
+                              |Need more info? Contact our expert counselor.       
+                            
+                          
+
+
+
+
+
+
+
+                block news
+                .col-md
+                    .position-sticky(style='top: 6rem;')
+                        .bg-light.rounded.position-sticky
+                            .card-body.text-start
+                                h3.card-title.mb-3
+                                    a.text-dark(href='https://www.google.com/' style='text-decoration: none;') News and Events
+                                include news_events.pug
+                                +news_events
+
+
+    //- End News and Events
+
+
+    //- FAQ start
+    block faq 
+
+    section#faq.p-4
+      .container.py-4
+        .text-center
+          h1 F.A.Q.
+          p
+            | Although we have shared all the information with you on our website, if there are any queries that are unaddressed,
+            
+            br
+            | you can find the answers to them below in our FAQs:
+        #accordionFlushExample.accordion.accordion-flush
+          .accordion-item
+            h2#flush-headingOne.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseOne' aria-expanded='false' aria-controls='flush-collapseOne')
+                | What to study in Canada post graduation?
+            #flush-collapseOne.accordion-collapse.collapse(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                |Choosing a curriculum and an institution is purely based on your personal preferences, academic background, and financial position.
+                |However, pursuing a master's degree in Canada could be one of the best decisions you ever make, as it will not only improve your technical expertise but also give your CV a major competitive advantage. As an Indian undergraduate student, you should seek for an institution that emphasizes practical knowledge, hands-on experience, and prepares you for employment.
+          .accordion-item
+            h2#flush-headingTwo.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseTwo' aria-expanded='false' aria-controls='flush-collapseTwo')
+                | Which English Language tests are preferred by Canadian universities?
+            #flush-collapseTwo.accordion-collapse.collapse(aria-labelledby='flush-headingTwo' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                |IELTS is the most preferred English proficiency test accepted by maximum institutes in Canada. 
+          .accordion-item
+            h2#flush-headingThree.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseThree' aria-expanded='false' aria-controls='flush-collapseThree')
+                | Can international students earn while they learn in Canada? 
+            #flush-collapseThree.accordion-collapse.collapse(aria-labelledby='flush-headingThree' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | During the academic year, Indian students are permitted to work for 20 hours a week and full-time during holidays. Depending on the length of your program, you may be eligible for a three-year extension after graduation.
+                
+          .accordion-item
+            h2#flush-headingFour.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFour' aria-expanded='false' aria-controls='flush-collapseFour')
+                | How to get into a Canadian University/College?
+            #flush-collapseFour.accordion-collapse.collapse(aria-labelledby='flush-headingFour' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | The basic requirements are 70 or above in 12th/ 4 years grad degree and IELTS or French proficiency scores to get into Canada’s universities. 
+         
+          .accordion-item
+            h2#flush-headingFive.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFive' aria-expanded='false' aria-controls='flush-collapseFive')
+                | What value does Canadian qualification hold globally?
+            #flush-collapseFive.accordion-collapse.collapse(aria-labelledby='flush-headingFive' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | Canadian degrees hold a high reputation worldwide because of the quality of education and industry-relevant curriculum provided by Canadian universities. 
+            
+        //- footer start
+
+    block footer
+        footer#footer
+            include footer.pug 
+            +footer

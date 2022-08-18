@@ -1,0 +1,163 @@
+doctype html 
+html
+  head
+    include head 
+    +head
+     
+    
+  body
+
+    block navbar
+
+        include navbar.pug
+        +navbar
+
+    //- end navbar
+    block content
+    .container
+        .card.text-white
+            img.card-img(src='../static/images/TOEFL.jpg' alt='study')
+            #insidePageBanner.card-img-overlay
+                #insidePageBanner-1
+                    h1 Write the heading here
+                    h5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, alias.
+                    a.btn.btn-primary(href='#')  Get Expert Advoice
+                #insidePageBanner-2
+                    h1 Write the heading here
+                    a.btn.btn-primary(href='#')  Get Expert Advoice
+    //- News and Events
+
+
+    section#mainBody.p-2
+    block main_news
+
+        .container
+            .row.text-center.g-4
+                
+                block mainBody
+                .col-md-9
+                    .bg-light.rounded
+                        .card-body
+                            h3.card-title.text-center.mb-3
+                                | Crack your TOEFL exam in one shot with Maxxcell Overseas, Goa's best coaching institute since 2013. Book your slot now!
+                            ul.text-start(type='disc')
+                                li 9+ Years of Success        
+                                li Numerous Students Trained         
+                                li 110 Achieved by the Student          
+                                li 6+ Years Experienced Faculty 
+                            p.text-start 
+                              | Maxxcell Overseas, Goa, empowers you with precise techniques and knowledge to ace your TOEFL exam. Our foolproof study material expedites your TOEFL preparations and takes your English proficiency to the next level. Our counseling team helps students keep track of upcoming exams dates to spare them from distractions. We also help them with TOEFL registration. All in all, Maxxcell's customized syllabus for all the sections and the team of experts help students achieve the best scores in TOEFL.
+                              | Register with us now and get the best TOEFL coaching available in Goa! Register now!
+                            h6.card-title.text-start
+                              | Why TOEFL is Maxxcell's favorite gateway exam?
+                            p.text-start 
+                              | The TOEFL® test measures the ability of non-native English speakers to communicate in English in an academic setting. It accurately measures how well you can read, listen, speak and write in English in a college or university classroom. 
+                              | TOEFL scores are accepted worldwide by more than 11,500 universities and other institutions in over 160 countries. More institutions accept TOEFL scores than scores from any other English-language test, and over 35 million people have taken the test since it began in 1964.
+                            p.text-start
+                              | Lets know more about ...
+                            h6.card-title.text-start
+                              | Why Maxxcell? 
+   
+                            ul.text-start(type='disc')
+                                li 25 power packed TOEFL sessions 
+                                li 2 full length Mock Tests 
+                                li Grammar and Vocabulary classes
+                                li Experienced And Professional Teachers 
+                                li Flexible Schedules And Fast Track Batches 
+                                li Comprehensive and Rigorous study material 
+                                li Individual attention based on adaptive learning 
+                                li Strong Focus on Concepts
+                                li Free Exam Registration Assistance 
+                                                              
+                                                                                    	                         
+                block news
+                .col-md
+                    .position-sticky(style='top: 6rem;')
+                        .bg-light.rounded.position-sticky
+                            .card-body.text-start
+                                h3.card-title.mb-3
+                                    a.text-dark(href='https://www.google.com/' style='text-decoration: none;') News and Events
+                                include news_events.pug
+                                +news_events
+
+
+    //- End News and Events
+    
+    
+    //- FAQ start
+    block faq 
+
+    section#faq.p-4
+      .container.py-4
+        .text-center
+          h1 F.A.Q.
+          p
+            | Although we have shared all the information with you on our website, if there are any queries that are unaddressed,
+            
+            br
+            | you can find the answers to them below in our FAQs:
+        #accordionFlushExample.accordion.accordion-flush
+          .accordion-item
+            h2#flush-headingOne.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseOne' aria-expanded='false' aria-controls='flush-collapseOne')
+                | What is TOEFL?
+
+            #flush-collapseOne.accordion-collapse.collapse(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                 | The TOEFL® test measures the ability of non-native English speakers to communicate in English in an academic setting. It accurately measures how well you can read, listen, speak and write in English in a college or university classroom.
+                 
+                
+                 
+                 
+          .accordion-item
+            h2#flush-headingTwo.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseTwo' aria-expanded='false' aria-controls='flush-collapseTwo')
+                | How is TOEFL exam conducted?
+            #flush-collapseTwo.accordion-collapse.collapse(aria-labelledby='flush-headingTwo' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | The test is conveniently offered via 3 testing options:
+                li the traditional TOEFL iBT test in a test center
+                li the TOEFL iBT Home Edition
+                li the TOEFL iBT Paper Edition
+          .accordion-item
+            h2#flush-headingThree.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseThree' aria-expanded='false' aria-controls='flush-collapseThree')
+                | Why TOEFL over other exams?
+            #flush-collapseThree.accordion-collapse.collapse(aria-labelledby='flush-headingThree' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | It's the only test that measures all 4 academic English skills — reading, listening, speaking, and writing — the way they are actually used in a classroom. So your TOEFL® scores provide a true reflection of your abilities and show admissions officers you have what it takes to be great.
+                
+          .accordion-item
+            h2#flush-headingFour.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFour' aria-expanded='false' aria-controls='flush-collapseFour')
+                | Is TOEFL conducted multiple times in a year?
+            #flush-collapseFour.accordion-collapse.collapse(aria-labelledby='flush-headingFour' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | The TOEFL iBT test is offered more than 60 times a year at authorized test centers around the world. 
+         
+          .accordion-item
+            h2#flush-headingFive.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFive' aria-expanded='false' aria-controls='flush-collapseFive')
+                | Is TOEFL exam conducted in Goa?
+            #flush-collapseFive.accordion-collapse.collapse(aria-labelledby='flush-headingFive' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | No, there are no TOEFL Exam centers in Goa. The closest TOEFL test centers from Goa are Pune, Mumbai, Goa, etc. 
+          .accordion-item
+            h2#flush-headingSix.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseSix' aria-expanded='false' aria-controls='flush-collapseSix')
+                | Does TOEFL exam have negative marking? 
+            #flush-collapseSix.accordion-collapse.collapse(aria-labelledby='flush-headingSix' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | Nope. Unlike many other exams, TOEFL does not have any negative marking. :) 
+                
+     
+          
+
+
+
+        //- footer start
+
+    block footer
+        footer#footer
+            include footer.pug 
+            +footer

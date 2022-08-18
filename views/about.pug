@@ -1,0 +1,120 @@
+doctype html 
+html
+  head
+    include head 
+    +head
+    
+    
+  body
+
+    block navbar
+
+        include navbar.pug
+        +navbar
+
+
+    block banner 
+    
+      section#banner.container
+        
+          .row
+            #topBannerone.col-md-6.topBanner
+              .text-center
+                h1 Let us partner with you in your Study Abroad journey
+                p 
+                  
+                 
+            #topBannerimg.col-md-6.topBanner
+              div
+                img.responsiveImg(src='../static/images/about/About-us-Banner.jpg' alt='responsive imgae')
+
+      .container 
+        .row.g-4
+          .col-md-2
+            .mt-4.pt-4.position-sticky(style='top: 6rem;')
+              p
+                a(href='#aboutMain') About Maxxcell
+                  
+              p
+                  a(href='#missionVision') Mission and Vision
+            
+              p
+                  a(href='#founder') Founder
+            
+              
+
+
+          .col-md-10
+                    
+            section#aboutMain.container.my-4
+              .row.featurette.bg-light.rounded-2
+                .aboutMainclass.col-md-7.order-md-2.order-2
+                  h2.text-center
+                    | Welcome to Maxxcell Overseas Education Services 
+                  br  
+                  p
+                    |Goa's most trusted institute since 2013 for overseas counselling and IELTS/GRE Training. Maxxcell takes pride in its legacy of fulfilling the ambition of more than 200 students by placing them in their dream universities across the globe and bagging upto 100% scholarships for many of them. Our students roar and shine in the competition by achieving 9/9 in IELTS and enter the best universities by claiming winning scores of 335/340 in GRE.
+                    br
+                    br
+
+                    |Our experienced faculty members and expert counsellors love to see a victorious smile on students' face and hence never think twice before going an extra mile for them. From the IELTS/ GRE preparation to Admission Counselling and VISA Process we hand hold students at every step of their study abroad journey! And trust us, we love to cater them!
+                    br
+                    br
+
+                    |Maxxcell's yet another distinguishing feature is its 
+                    b 98% Visa Success Rate. 
+                    |With this track record, we have sent hundreds of students to their dream destinations and are in the process of sending many more. We understand that applying for VISA is an overwhelming task. With enormous paperwork and documentation, it can break the most robust soul on this earth, but not us! Yes, Maxxcell's wise sages can shoo your VISA woes by supporting you at every step. Our experts have the necessary experience and knowledge to help you sail through this complex visa application process and claim your visa with greater confidence! 
+                    
+
+
+ 
+                .aboutMainclass.col-md-5.order-md-1.order-1
+                  img(src="../static/images/about/Welcome-to-Maxxcell.jpg", alt="Maxxcell message image", srcset="")
+
+            section#missionVision.container
+              .row.featurette.bg-light.rounded-2
+                .aboutMainclass.col-md-7.order-md-1.order-2
+                  h2.text-center
+                    | Mission, Vision, Values and Company culture  
+                    
+                  p
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, placeat cupiditate nam necessitatibus totam omnis vel. Hic nulla distinctio, dignissimos cumque doloribus ratione libero deleniti!
+                    br
+                    br
+                    |Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat excepturi neque, beatae nobis temporibus sunt voluptates obcaecati, consequatur, maiores vitae fuga. Odio saepe optio rem!
+                    br
+                    br
+                    |Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corporis sit repudiandae officia voluptatum, enim adipisci quam animi provident magni rerum ea rem neque amet, odio sequi doloribus. Nostrum, a.
+                    br
+
+                .aboutMainclass.col-md-5.order-md-2.order-1
+                  img(src="../static/images/about/Mission-Vision-CoreValues.jpg", alt="Shyam Manavat", srcset="")
+      
+            section#founder.container.my-4
+              .row.featurette.bg-light.rounded-2
+                .aboutMainclass.col-md-7.order-md-2.order-2
+                  h2.text-center
+                    | Meet our founder 
+                    br
+                    br 
+                  p
+                    | Mr. Shyam Manavat believes that every student deserves a better future! Although for better opportunities they may have to travel abroad, write prerequisite exams like IELTS/TOEFL/GRE, and do loads of paperwork, nothing should stop them. Instead, experts should walk them through this maze and enable them with the right information and resources to materialize their dream. And this is precisely why Maxxcell Overseas Education Services was founded, to handhold the study abroad aspirants throughout their abroad education journey.
+                    br
+                    br
+                    |However, Mr. Shyam Manavat, who has immense experience in teaching and career counseling always wanted to use his expertise for the noble cause of shaping students' careers and making education more affordable.
+                    br
+                    
+
+                .aboutMainclass.col-md-5.order-md-1.order-1
+                  img(src="../static/images/about/Our-Founder-Shyam-Manavat.jpg", alt="Maxxcell message image", srcset="")
+
+
+
+
+
+    //- footer start
+
+    block footer
+        footer#footer
+            include footer.pug 
+            +footer

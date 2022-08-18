@@ -1,0 +1,194 @@
+doctype html 
+html
+  head
+    include head 
+    +head
+     
+    
+  body
+
+    block navbar
+
+        include navbar.pug
+        +navbar
+
+    //- end navbar
+    block content
+    .container
+        .card.text-white
+            img.card-img(src='../static/images/GRE.jpg' alt='study')
+            #insidePageBanner.card-img-overlay
+                #insidePageBanner-1
+                    h1 Write the heading here
+                    h5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, alias.
+                    a.btn.btn-primary(href='#')  Get Expert Advoice
+                #insidePageBanner-2
+                    h1 Write the heading here
+                    a.btn.btn-primary(href='#')  Get Expert Advoice
+    //- News and Events
+
+
+    section#mainBody.p-2
+    block main_news
+
+        .container
+            .row.text-center.g-4
+                
+                block mainBody
+                .col-md-9
+                    .bg-light.rounded
+                        .card-body
+                            h3.card-title.text-center.mb-3
+                                | Achieve your target score in GRE with Maxxcell Overseas Goa. Join our GRE course and fulfill your ambition of studying in your dream university!
+                            ul.text-start(type='disc')
+                                li 9+ Years of Success    
+                                li Numerous Happy Students      
+                                li 335 marks scorer alumini      
+                                li 15+ Years Experienced Faculty   
+                            h6.card-title.text-start
+                              | Lets know about GRE:
+                            p.text-start 
+                              | The Graduate Record Examination (GRE) is an examination that is a pre-requisite for admissions into a majority of graduate programs at US, Canada, UK and some other countries universities. The GRE typically tests your Mathematical, Verbal and Writing skills. 
+                            
+                            h6.card-title.text-start
+                              |Why Maxxcell?
+                            p.text-start
+                              |Because we understand that a high GRE score needs more than just classes and videos, it needs comprehensive study material and guidance of an expert who is invested in helping you. When you enroll with Maxxcell Overseas, you are assigned not just one, but two experienced trainers for Quant and Verbal who leverage their experience and employ their expertise in pushing you to the next level. And to achieve that level we provide you:   
+                            ul.text-start(type='disc')
+                                li Rigorous and Extensive Study Material
+                                li 36 Exclusive Classes to Cover Basics
+                                li Verbal classes to mug 2000+ high frequency words 
+                                li Quant sessions to help you crack complex questions 
+                                li Custom Study Plan to Improve Scores 
+                            h6.card-title.text-start 
+                              |Powerful GRE Exam Prep Material   
+                            p.text-start 
+                              |Accurate & Rigorous Practice 
+                            ul.text-start(type='disc')   
+                                li 1000+ questions for GRE verbal and quant 
+                                li Topic wise & question type wise practice questions
+                                li Main concepts explained with examples
+                                li AWA Practice Questions with 'Score 6' answers
+                            h6.card-title.text-start
+                              |Verbal/ Quant Practice Suite
+                            ul.text-start(type='disc')  
+                                li Multiple Worksheets with mixed questions
+                                li Three difficulty levels (Basic/ Intermediate/ Advance) covered
+                                li Detailed Explanatory Answers 
+                          
+                            h6.card-title.text-start
+                              |Online Test Support: 
+                            ul.text-start(type='disc')  
+                                li 46 Topic Wise Test on Quantitative Reasoning.
+                                li 24 test on Reading Comprehension.
+                                li 36 test on Sentence Correction & Text completion.
+                                li 22 test on Vocabulary.
+                                li Sectional Tests: 16 quantitative reasoning, 9 verbal
+                                li Full length mock GRE:
+                        
+                                   li 1 paper based.
+                                   li 10 full length test
+                            h6.card-title.text-start 
+                              | GRE High Frequency Vocab Prep 
+                            ul.text-start(type='disc')  
+                                li An extensive WORDLIST of 2000+ words
+                                li Vocab Flashcards to learn on go
+                                li 500+ Vocab based questions 
+                                li Vocab Exercises with meaning and memory aid
+                           
+
+                                                       
+                                                                                    	                         
+                block news
+                .col-md
+                    .position-sticky(style='top: 6rem;')
+                        .bg-light.rounded.position-sticky
+                            .card-body.text-start
+                                h3.card-title.mb-3
+                                    a.text-dark(href='https://www.google.com/' style='text-decoration: none;') News and Events
+                                include news_events.pug
+                                +news_events
+
+
+    //- End News and Events
+    
+    
+    //- FAQ start
+    block faq 
+
+    section#faq.p-4
+      .container.py-4
+        .text-center
+          h1 F.A.Q.
+          p
+            | Although we have shared all the information with you on our website, if there are any queries that are unaddressed,
+            
+            br
+            | you can find the answers to them below in our FAQs:
+        #accordionFlushExample.accordion.accordion-flush
+          .accordion-item
+            h2#flush-headingOne.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseOne' aria-expanded='false' aria-controls='flush-collapseOne')
+                | What is the GRE?
+            #flush-collapseOne.accordion-collapse.collapse(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                 | The GRE is a 4-hour computerized exam required for admission to graduate school. The maximum score on the GRE, which is a combination of the Quantitative and Verbal sections, is 340.
+                 | The test is mainly computer-based.
+                 | You can attempt GRE once in 21 days and a maximum of 5 times in a period of 12 months.
+                 | Your GRE score is valid for 5 years 
+                 
+          .accordion-item
+            h2#flush-headingTwo.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseTwo' aria-expanded='false' aria-controls='flush-collapseTwo')
+                | How does the MST (Multi-Stage Test) work?
+            #flush-collapseTwo.accordion-collapse.collapse(aria-labelledby='flush-headingTwo' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | The multi-stage format presents questions according to each individual’s ability level. These questions are chosen from a pool of test questions categorized by content and difficulty. The MST GRE will adapt on the section level rather than on the question level. In other words, the computer will select the next section (not question) based on how you did on the previous section. You will be able to skip a question or go back to change it later by using a new mark and review feature. A key part in preparing for the GRE is to understand the MST format and how your score is determined.
+          .accordion-item
+            h2#flush-headingThree.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseThree' aria-expanded='false' aria-controls='flush-collapseThree')
+                | How is the GRE Scored?
+            #flush-collapseThree.accordion-collapse.collapse(aria-labelledby='flush-headingThree' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | The GRE has three sections – a Verbal Section, a Quantitative Section and an Analytical Writing Section. The Quantitative and Verbal Sections are each out of 170 points making the highest possible score on the GRE a 340. The Analytical Writing Section is scored on an independent scale where a student gets a score from 0 to 6, with 6 being the highest. The Analytical Writing Score does not affect the overall score out of 340 points.
+                
+          .accordion-item
+            h2#flush-headingFour.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFour' aria-expanded='false' aria-controls='flush-collapseFour')
+                | When should I take the GRE?
+            #flush-collapseFour.accordion-collapse.collapse(aria-labelledby='flush-headingFour' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | The GRE is administered year-round in testing centers all across the country. The only restriction on taking the test is that you may not take the GRE more than one time in any calendar month, even if you have taken the test and canceled your scores. When you should take the GRE depends on the application deadline of the school to which you are applying to and if you think you may need to take it more than once. 
+         
+          .accordion-item
+            h2#flush-headingFive.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFive' aria-expanded='false' aria-controls='flush-collapseFive')
+                | Do I need to write IELTS/TOEFL if I’m already appearing for GRE exam?
+            #flush-collapseFive.accordion-collapse.collapse(aria-labelledby='flush-headingFive' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | This depends on the University that you are applying to, if that particular university needs you to submit your IELTS/TOEFL score than you may have to write IELTS/TOEFL. Please speak to your consultant for more details.
+          .accordion-item
+            h2#flush-headingSix.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseSix' aria-expanded='false' aria-controls='flush-collapseSix')
+                | What is GRE exam fees? 
+            #flush-collapseSix.accordion-collapse.collapse(aria-labelledby='flush-headingSix' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | The GRE fees in Indian rupees is roughly Rs. 15,912 where ($1= Rs 74.70) approximately. (updates on 22 April 2022) 
+                
+          .accordion-item
+            h2#flush-headingSeven.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseSeven' aria-expanded='false' aria-controls='flush-collapseSeven')
+                | If university requires both, which test should I write first, GRE or IELTS/TOEFL?
+            #flush-collapseSeven.accordion-collapse.collapse(aria-labelledby='flush-headingSeven' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | It depends on your comfort level, but at the same time you should take this fact into consideration that GRE score remain valid for 5 years whereas IELTS/TOEFL scores are valid only for 2 years. 
+          
+
+
+
+        //- footer start
+
+    block footer
+        footer#footer
+            include footer.pug 
+            +footer

@@ -1,0 +1,194 @@
+doctype html 
+html
+  head
+    include head 
+    +head
+     
+    
+  body
+
+    block navbar
+
+        include navbar.pug
+        +navbar
+
+    //- end navbar
+    block content
+    .container
+        .card.text-white
+            img.card-img(src='../static/images/Study-In-Australia.jpg' alt='study')
+            #insidePageBanner.card-img-overlay
+                #insidePageBanner-1
+                    h1 Write the heading here
+                    h5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, alias.
+                    a.btn.btn-primary(href='#')  Get Expert Advoice
+                #insidePageBanner-2
+                    h1 Write the heading here
+                    a.btn.btn-primary(href='#')  Get Expert Advoice
+    //- News and Events
+
+
+    section#mainBody.p-2
+    block main_news
+
+        .container
+            .row.text-center.g-4
+                
+                block mainBody
+                .col-md-9
+                    .bg-light.rounded
+                        .card-body
+                            h3.card-title.text-center.mb-3
+                                | Study in Top Universities in Australia with Maxxcell! 
+                                
+                            p.text-start 
+                              |University Shortlisting/Applications/IELTS Prep/Scholarships/Education Loans/ Visa 
+                            p.text-start 
+                              |No matter if it is University of Melbourne, The University of Sydney, University of Queensland, or any other university... Maxxcell helps students get into the best Australian universities. 
+                            p.text-start 
+                              |Let's crack the code of getting into the topmost Australian Colleges & Universities! 
+                            p.text-start 
+                              |Getting into a top Australian university, such as University of Melbourne can be a difficult and competitive procedure with low admission rates. Maxxcell's experienced abroad counselors ensure that our students' applications stand out in the worldwide candidate pool by addressing every part of the university application with the same dedication. Our team of expert counselors helps you  
+                            ul.text-start(type='disc')
+                                li Explore study options in the Australia
+                                li Select the right institution and university 
+                                li Find the right course
+                                li Apply to multiple universities
+                                li Obtaining loans/strengthening your financial documents
+                                li To bag a decent scholarship
+                                li To ensure the visa approval
+                                li Understand pre-departure details 
+                            h6.card-title.text-start 
+                              |WHY STUDY IN AUSTRALIA? 
+                            p.text-start
+                              | Australia is not only kangaroos and koala bears. There is much more to offer. It has a friendly atmosphere, diverse culture, and the best education system for international students. 
+                            p.text-start 
+                              | Besides, studying in a practical learning environment may provide a new perspective on education. Asian students prefer coming to here because of the mixed culture and state of the art facilities.
+                            p.text-start  
+                              | Thirdly, the norms for working with a post-study visa have become lenient. Therefore, international students can get an international degree and work experience both to add value to their resume. 
+                            p.text-start  
+                              | it has become easier for international students to work in Australia after completing their education. With an international degree in hand, international students also have an opportunity to gain international work experience and value to their resume. 
+                              
+                            h6.card-title.text-start 
+                              |AUSTRALIAN EDUCATION SYSTEM 
+                            p.text-start 
+                              |School education (Primary and Secondary)
+                              |Only small differences exist between states and territories when it comes to school education. Between the ages of six and sixteen, compulsory schooling (primary and secondary) is required (Year 1 to Year 9 or 10). The school year is broken into three parts:
+                              p
+                                ul.text-start(type='disc')  
+                                    li Primary school consists of seven or eight years of instruction, beginning in Kindergarten/Preparatory and ending in Year 6 or 7.
+                                    li Secondary school consists of three or four years of study, from Years 7 to 10 or Years 8 to 10.
+                                    li Year 11 and 12 are the two years of senior high education.
+                            
+                            h6.card-title.text-start
+                              |Tertiary education
+                              p 
+                                ul.text-start(type='disc')
+                                    li Tertiary education includes both higher education (including universities) and vocational education and training (VET).
+                            h6.card-title.text-start 
+                              |Language of instruction
+                              p 
+                               ul.text-start(type='disc')
+                                    li English is Australia's national language and the primary medium of instruction in the educational system. Many schools provide bilingual or multilingual programs.
+                        
+                            h6.card-title.text-start
+                              |INTAKE
+                              p 
+                                ul.text-start(type='disc')
+                                     li February   
+                                     li July 
+                                     
+                            h6.card-title.text-start
+                              |WORK RIGHTS & STAY BACK
+                              p  
+                                ul.text-start(type='disc')
+                                     li Increase the stay period for master’s by coursework graduates, on a permanent basis.
+                                     li Increase the stay period for Temporary Graduate visa applicants from VET sector graduates onshore to 24 months, on a temporary basis.
+                                     li Australia is very open when it comes to international students. With the increasing number of students pouring in each year, the Australian government is offering 4 years of post-study work rights after completing bachelor's. However, after completing the masters students can work for 5 years. 
+                            p.text-start   
+                              |Need more info? Contact our expert counselor.       
+                            
+                          
+
+
+
+
+
+
+
+                block news
+                .col-md
+                    .position-sticky(style='top: 6rem;')
+                        .bg-light.rounded.position-sticky
+                            .card-body.text-start
+                                h3.card-title.mb-3
+                                    a.text-dark(href='https://www.google.com/' style='text-decoration: none;') News and Events
+                                include news_events.pug
+                                +news_events
+
+
+    //- End News and Events
+
+
+    //- FAQ start
+    block faq 
+
+    section#faq.p-4
+      .container.py-4
+        .text-center
+          h1 F.A.Q.
+          p
+            | Although we have shared all the information with you on our website, if there are any queries that are unaddressed,
+            
+            br
+            | you can find the answers to them below in our FAQs:
+        #accordionFlushExample.accordion.accordion-flush
+          .accordion-item
+            h2#flush-headingOne.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseOne' aria-expanded='false' aria-controls='flush-collapseOne')
+                | What English language tests are acceptable for Australian student visas?
+            #flush-collapseOne.accordion-collapse.collapse(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                 | There are five different tests accepted for Australian student visa applications:
+                 li Test of English as a Foreign Language (TOEFL).
+                 li International English Language Testing System (IELTS).
+                 li Cambridge English: Advanced (CAE).
+                 li Occupational English Test (OET).
+                 li Pearson Test of English (PTE).
+          .accordion-item
+            h2#flush-headingTwo.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseTwo' aria-expanded='false' aria-controls='flush-collapseTwo')
+                | Do Australian universities offer scholarships to international students?
+            #flush-collapseTwo.accordion-collapse.collapse(aria-labelledby='flush-headingTwo' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | The majority of Australian universities offer scholarships, and many of them are open to international students. It's advisable to contact your preferred college directly for more information on scholarship availability and qualifications. By doing a program research and sending an inquiry on our website, you can directly contact institutions. Please select the'scholarships' option when completing the inquiry form.
+          .accordion-item
+            h2#flush-headingThree.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseThree' aria-expanded='false' aria-controls='flush-collapseThree')
+                | How can I apply for an Australian student visa? What requirements do I need to meet?
+            #flush-collapseThree.accordion-collapse.collapse(aria-labelledby='flush-headingThree' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | The student visas section on our website will help you understand the requirements needed to gain a student visa. It also identifies the costs associated with applying. In most cases, you can apply for a student visa using either a letter of offer or a Confirmation of Enrollment (CoE) from your institution. The application process can be completed online, by post or at a designated Australian visa office.
+                | For further information regarding student visas, please visit the Department of Immigration and Border Protection website.
+          .accordion-item
+            h2#flush-headingFour.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFour' aria-expanded='false' aria-controls='flush-collapseFour')
+                | Are Australian qualifications internationally recognized?
+            #flush-collapseFour.accordion-collapse.collapse(aria-labelledby='flush-headingFour' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | Yes, degrees from Australian colleges are recognized internationally and are regarded for their high educational standards.
+         
+          .accordion-item
+            h2#flush-headingFive.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFive' aria-expanded='false' aria-controls='flush-collapseFive')
+                | Can I work during my studies in Australia?
+            #flush-collapseFive.accordion-collapse.collapse(aria-labelledby='flush-headingFive' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | Yes, you can work while you’re studying in Australia. International students are permitted to work a maximum of 40 hours per fortnight during study periods and unlimited hours during study breaks. There are no work restrictions for students completing a masters by research or doctoral degree. For more information about student visas and working rights, please visit the Department of Immigration and Border Protection website.
+            
+        //- footer start
+
+    block footer
+        footer#footer
+            include footer.pug 
+            +footer

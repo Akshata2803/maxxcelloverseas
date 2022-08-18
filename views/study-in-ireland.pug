@@ -1,0 +1,204 @@
+doctype html 
+html
+  head
+    include head 
+    +head
+     
+    
+  body
+
+    block navbar
+
+        include navbar.pug
+        +navbar
+
+    //- end navbar
+    block content
+    .container
+        .card.text-white
+            img.card-img(src='../static/images/Study-In-Ireland.jpg' alt='study')
+            #insidePageBanner.card-img-overlay
+                #insidePageBanner-1
+                    h1 Write the heading here
+                    h5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, alias.
+                    a.btn.btn-primary(href='#')  Get Expert Advoice
+                #insidePageBanner-2
+                    h1 Write the heading here
+                    a.btn.btn-primary(href='#')  Get Expert Advoice
+    //- News and Events
+
+
+    section#mainBody.p-2
+    block main_news
+
+        .container
+            .row.text-center.g-4
+                
+                block mainBody
+                .col-md-9
+                    .bg-light.rounded
+                        .card-body
+                            h3.card-title.text-center.mb-3
+                                | Study in Top Universities in Ireland with Maxxcell! 
+                                
+                            p.text-start 
+                              |University Shortlisting/Applications/IELTS Prep/Scholarships/Education Loans/ Visa 
+                            p.text-start 
+                              |No matter if it is an Ivy League college, Trinity College Dublin, University of Ireland, or any other university... Maxxcell helps students get into the best Ireland universities. 
+                            p.text-start 
+                              |Let's crack the code of getting into topmost Ireland Colleges & Universities! 
+                            p.text-start 
+                              |Getting into a top Ireland university, such as Trinity College Dublin can be a difficult and competitive procedure with low admission rates. Maxxcell's experienced abroad counselors ensure that our students' applications stand out in the worldwide candidate pool by addressing every part of the university application with the same dedication. Our team of expert counselors helps you 
+                            ul.text-start(type='disc')
+                                li Explore study options in the Ireland
+                                li Select the right institution and university 
+                                li Find the right course
+                                li Apply to multiple universities
+                                li Obtaining loans/strengthening your financial documents
+                                li To bag a decent scholarship
+                                li To ensure the visa approval
+                                li Understand pre-departure details 
+                            h6.card-title.text-start
+                              |WHY STUDY IN IRELAND? 
+                            p.text-start
+                              |Ireland is an ideal location for anyone seeking a world-class education, especially in a forward-thinking, inventive country with great employment opportunities. International students interested in gorgeous scenery, wonderful coastline and mountain treks, old culture, and architecture will love Ireland. Various museums and galleries, delicious food, coffee culture, and comfortable taverns with traditional live music will appeal to others who prefer the inside.
+                            p.text-start  
+                              |Another compelling motive for foreign students to pursue studies in Ireland is the possibility of obtaining a stay-back visa. Graduates who intend to pursue a profession in Ireland after completing their studies can get a one- or two-year stay-back visa.
+                        
+                               
+                                    
+                                    
+                                    
+                            h6.card-title.text-start 
+                              |IRELAND EDUCATION SYSTEM 
+                              
+
+                              p.text-start
+                              
+                                |The Irish education system is pretty comparable to that of the UK which in itself explains the quality it gives to its students. Ireland's educational system is divided into four tiers.
+                                    
+                                  
+                            h6.card-title.text-start
+                              |Basic education/ Primary Education
+                              p.text-start 
+                               |Although children are not required to attend school until the age of six, it is common for them to begin the September after their fourth birthday. Junior and senior infant classes are for children aged four and five.
+                            
+                            h6.card-title.text-start 
+                              |Post Primary Education
+                              p.text-start 
+                               |A three-year junior cycle is followed by a two- or three-year senior cycle, depending on whether an optional Transition Year is taken after the Junior Certificate or Junior Cycle (JCPA) test.Students generally start the junior cycle at the age of 12. The Junior Certificate or JCPA is taken after 3 years.
+                              
+                            h6.card-title.text-start 
+                              |Third-Tier Education and training opportunities
+                              p.text-start
+                               |Many different fields make up third-level education. The state contributes significantly to the tertiary education sector, the technical sector, and educational colleges. A handful of autonomous private colleges are also available.
+                              p.text-start  
+                               |There are universities that are self-governing and independent. They provide bachelor's, master's, and doctoral degree programmer. 
+                            h6.card-title.text-start 
+                              |University education
+                              p.text-start  
+                               |Further education refers to education and training that occurs after secondary school but before entering the third-level system. Programs such as Post-Leaving Certificate courses are included. Unemployed people can get a second opportunity at school under the Vocational Training Opportunities Scheme.
+                              
+
+                                
+                            h6.card-title.text-start
+                              |INTAKE
+                              p 
+                                ul.text-start(type='disc')
+                                     li Fall : September / October
+                                     li Spring : January / February (Few Universities)
+                                     
+                                     
+                                     
+                            h6.card-title.text-start
+                              |WORK RIGHTS & STAY BACK
+                              p 
+                                ul.text-start(type='disc')
+                                     li The minimum wage in this country is €8.65 per hour, and students can lawfully work up to 20 hours per week during the school year and 40 hours per week during holidays.
+                                     li Optional Practical Training (OPT) is a one-year programme that can be extended to 24 months for STEM (Science, Technology, Engineering, and Mathematics) graduates.
+                            
+                                  
+                                   
+                            p.text-start   
+                              |Need more info? Contact our expert counselor.       
+                            
+                          
+
+
+
+
+
+
+
+                block news
+                .col-md
+                    .position-sticky(style='top: 6rem;')
+                        .bg-light.rounded.position-sticky
+                            .card-body.text-start
+                                h3.card-title.mb-3
+                                    a.text-dark(href='https://www.google.com/' style='text-decoration: none;') News and Events
+                                include news_events.pug
+                                +news_events
+
+
+    //- End News and Events
+
+
+    //- FAQ start
+    block faq 
+
+    section#faq.p-4
+      .container.py-4
+        .text-center
+          h1 F.A.Q.
+          p
+            | Although we have shared all the information with you on our website, if there are any queries that are unaddressed,
+            
+            br
+            | you can find the answers to them below in our FAQs:
+        #accordionFlushExample.accordion.accordion-flush
+          .accordion-item
+            h2#flush-headingOne.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseOne' aria-expanded='false' aria-controls='flush-collapseOne')
+                | Do Irish institutions recognise India's 10+2+3 education system?
+            #flush-collapseOne.accordion-collapse.collapse(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                |Yes, Irish universities recognize the 10+2+3 format for master's programmes.
+                
+          .accordion-item
+            h2#flush-headingTwo.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseTwo' aria-expanded='false' aria-controls='flush-collapseTwo')
+                | Is IELTS a requirement for a student visa in Ireland?
+            #flush-collapseTwo.accordion-collapse.collapse(aria-labelledby='flush-headingTwo' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                |The majority of Irish colleges and institutions accept IELTS scores of 6.5. The Irish Naturalisation and Immigration Service, on the other hand, requires IELTS band scores of 5.
+          .accordion-item
+            h2#flush-headingThree.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseThree' aria-expanded='false' aria-controls='flush-collapseThree')
+                | How much time is needed to receive an Irish student visa?
+            #flush-collapseThree.accordion-collapse.collapse(aria-labelledby='flush-headingThree' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | The processing time for an Ireland Student Visa varies depending on the country from which you submit your application. In most cases, you will receive your Visa decision between 4 to 8 weeks. This period begins when you submit your application to the Consulate, Embassy, or Visa Office.
+                
+          .accordion-item
+            h2#flush-headingFour.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFour' aria-expanded='false' aria-controls='flush-collapseFour')
+                | Are Irish qualifications internationally recognized?
+            #flush-collapseFour.accordion-collapse.collapse(aria-labelledby='flush-headingFour' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                 |Yes, degrees from Irish colleges are recognized internationally and are regarded for their high educational standards.
+         
+          .accordion-item
+            h2#flush-headingFive.accordion-header
+              button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseFive' aria-expanded='false' aria-controls='flush-collapseFive')
+                | Are there any specific prerequisites for students under the age of 18 who want to study in Ireland?
+            #flush-collapseFive.accordion-collapse.collapse(aria-labelledby='flush-headingFive' data-bs-parent='#accordionFlushExample')
+              .accordion-body
+                | If you're 16 or 17, you'll need written permission from your parents/guardians to travel and live independently in Ireland, as well as the contact information of your guardian. When you apply for your visa, we will help you with this.
+            
+        //- footer start
+
+    block footer
+        footer#footer
+            include footer.pug 
+            +footer

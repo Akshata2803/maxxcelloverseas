@@ -1,7 +1,7 @@
 doctype html 
 html
   head
-    include head 
+    include ../head 
     +head
     title TOEFL Coaching Classes in Goa- Study Abroad with Maxxcell #{title}
     meta(name='keywods' content='toefl coaching classes, toefl online classes, toefl study material, toefl exam preparation, classes for toefl')
@@ -12,7 +12,7 @@ html
 
     block navbar
 
-        include navbar.pug
+        include ../navbar.pug
         +navbar
 
     //- end navbar
@@ -80,7 +80,7 @@ html
                             .card-body.text-start
                                 h3.card-title.mb-3
                                     a.text-dark(href='https://www.google.com/' style='text-decoration: none;') News and Events
-                                include news_events.pug
+                                include ../news_events.pug
                                 +news_events
 
 
@@ -162,5 +162,5 @@ html
 
     block footer
         footer#footer
-            include footer.pug 
+            include ../footer.pug 
             +footer

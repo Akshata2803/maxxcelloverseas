@@ -1,7 +1,7 @@
 doctype html 
 html
   head
-    include head 
+    include ../head 
     +head
     title Want to study in Australia? Get into Top Australian colleges with Maxxcell #{title}
     meta(name='keywods' content='study in australia,why study in australia,top australian university,education for australia,study in australia consultants')
@@ -12,7 +12,7 @@ html
 
     block navbar
 
-        include navbar.pug
+        include ../navbar.pug
         +navbar
 
     //- end navbar
@@ -126,7 +126,7 @@ html
                             .card-body.text-start
                                 h3.card-title.mb-3
                                     a.text-dark(href='https://www.google.com/' style='text-decoration: none;') News and Events
-                                include news_events.pug
+                                include ../news_events.pug
                                 +news_events
 
 
@@ -193,5 +193,5 @@ html
 
     block footer
         footer#footer
-            include footer.pug 
+            include ../footer.pug 
             +footer

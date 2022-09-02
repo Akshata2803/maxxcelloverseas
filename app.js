@@ -3,7 +3,7 @@ const app = express();
 const path = require("path");
 let port = process.env.PORT;
 if (port == null || port == "") {
-  port = 80;
+  port = 3000;
 }
 
 // for serving static files

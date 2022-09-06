@@ -26,36 +26,36 @@ app.get("/layout", (req, res) => {
   res.status(200).render("layout.pug", params);
 });
 
-app.route("/study-in-uk").get((req, res) => {
-  res.render("study-dest/study-in-uk");
+app.route("/study-in-uk-admission-counseling").get((req, res) => {
+  res.render("study-dest/study-in-uk-admission-counseling.pug");
 });
 
-app.route("/study-in-usa").get((req, res) => {
-  res.render("study-dest/study-in-usa");
+app.route("/study-in-usa-admission-counseling").get((req, res) => {
+  res.render("study-dest/study-in-usa-admission-counseling.pug");
 });
 
-app.route("/study-in-canada").get((req, res) => {
-  res.render("study-dest/study-in-canada");
+app.route("/study-in-canada-admission-counseling").get((req, res) => {
+  res.render("study-dest/study-in-canada-admission-counseling.pug");
 });
 
-app.route("/study-in-ireland").get((req, res) => {
-  res.render("study-dest/study-in-ireland");
+app.route("/study-in-ireland-admission-counseling").get((req, res) => {
+  res.render("study-dest/study-in-ireland-admission-counseling.pug");
 });
 
-app.route("/study-in-australia").get((req, res) => {
-  res.render("study-dest/study-in-australia");
+app.route("/study-in-australia-admission-counseling").get((req, res) => {
+  res.render("study-dest/study-in-australia-admission-counseling.pug");
 });
 
-app.route("/ielts").get((req, res) => {
-  res.render("exams/ielts.pug");
+app.route("/ielts-coaching-exam-preparation-online-offline").get((req, res) => {
+  res.render("exams/ielts-coaching-exam-preparation-online-offline.pug");
 });
 
-app.route("/gre").get((req, res) => {
-  res.render("exams/gre.pug");
+app.route("/gre-coaching-exam-preparation-online-offline").get((req, res) => {
+  res.render("exams/gre-coaching-exam-preparation-online-offline.pug");
 });
 
-app.route("/toefl").get((req, res) => {
-  res.render("exams/toefl.pug");
+app.route("/toefl-coaching-exam-preparation-online-offline").get((req, res) => {
+  res.render("exams/toefl-coaching-exam-preparation-online-offline.pug");
 });
 
 app.get("/our-services", (req, res) => {
@@ -68,11 +68,8 @@ app.get("/blogs-list", (req, res) => {
 });
 
 app
-  .route("/blog-page-10-tips-to-score-a-perfect-170-In-gre-quant")
-  .get((req, res) => {
-    res.render(
-      "blogs/blog-page-10-tips-to-score-a-perfect-170-In-gre-quant.pug"
-    );
+  .route("/blog-page-10-tips-to-score-a-perfect-170-In-gre-quant").get((req, res) => {
+    res.render("blogs/blog-page-10-tips-to-score-a-perfect-170-In-gre-quant.pug");
   });
 
 app.route("/blog-page-10-tips-to-crack-the-IELTS-Exam").get((req, res) => {
@@ -82,16 +79,14 @@ app.route("/blog-page-10-tips-to-crack-the-IELTS-Exam").get((req, res) => {
 app
   .route(
     "/blog-page-10-Tips-to-remember-before-writing-a-professional-SOP-for-higher-Ranked-Universities"
-  )
-  .get((req, res) => {
+  ).get((req, res) => {
     res.render(
       "blogs/blog-page-10-Tips-to-remember-before-writing-a-professional-SOP-for-higher-Ranked-Universities.pug"
     );
   });
 
 app
-  .route("/blog-page-Top-10-Programs-for-Data-Science-in-USA")
-  .get((req, res) => {
+  .route("/blog-page-Top-10-Programs-for-Data-Science-in-USA").get((req, res) => {
     res.render("blogs/blog-page-Top-10-Programs-for-Data-Science-in-USA.pug");
   });
 
@@ -127,18 +122,18 @@ app.get("/testimonial", (req, res) => {
   res.status(200).render("testimonial.pug", params);
 });
 
-app.get("/about", (req, res) => {
+app.get("/about-maxxcell-institute-and-overseas-education-services", (req, res) => {
   const params = {};
-  res.status(200).render("about.pug", params);
+  res.status(200).render("about-maxxcell-institute-and-overseas-education-services.pug", params);
 });
 
 app.get("/", (req, res) => {
   res.send("This is my first app for Maxxcell Overseas");
 });
 
-app.get("/about", (req, res) => {
-  res.send("This is About us for Maxxcell Overseas");
-});
+// app.get("/about", (req, res) => {
+//   res.send("This is About us for Maxxcell Overseas");
+// });
 
 //Start the server
 app.listen(port, () => {

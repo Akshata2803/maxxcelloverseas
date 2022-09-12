@@ -131,6 +131,11 @@ app.get("/", (req, res) => {
   res.send("This is my first app for Maxxcell Overseas");
 });
 
+app.get("/sitemap.xml", (req, res) => {
+  const params = {};
+  res.status(200).render("sitemap.pug", params);
+});
+
 // app.get("/about", (req, res) => {
 //   res.send("This is About us for Maxxcell Overseas");
 // });

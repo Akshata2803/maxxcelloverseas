@@ -1,37 +1,37 @@
 mixin footer 
     .footer-top.mt-4
-                .container
+            
+                hr
+                .container.mt-2
                     .row
                         .col-lg-3.col-md-6.footer-contact
-                            h3 Maxxcell Institute & Overseas Education Services
-                            h6 North Goa Office:
-                            p
-                                | 305, B Wing, Sunteck Kanaka, 
+                          h3 Maxxcell Institute & Overseas Education Services
+                        .col-lg-2.col-md-6.footer-links
+                          h6 Nort Goa Office:
+                          p
+                                a(href='https://goo.gl/maps/PBBaheT3HPecKMXQ7') View On Google Maps
                                 br
-                                | Opposite KTC Bus Stand, Patto,
-                                br
-                                | Panjim, Goa, 403001 
-                                br
-                                strong Phone:
-                                |  +91 8806788552
-                                br
-                            h6 South Goa Office:
-                            p
-                                | 103, Reliance Magnum Building,
-                                br
-                                |               Opposite KTC Bus Stand,
-                                br
-                                |               Margao, Goa, 403601 
+                                |         Panjim, Goa, 403001 
                                 br
                                 strong Phone:
-                                |  +91 7447499733
+                                     |  +91 8806788552
+                                br
+                        .col-lg-3.col-md-6.footer-links
+                          h6 South Goa Office:
+                          p
+                                a(href='https://goo.gl/maps/MpWvhYWeTcv3Cfxe6') View On Google Maps
+                                br
+                                |     Margao, Goa, 403601
+                                br
+                                strong Phone:
+                                     |  +91 7447499733
                                 br
                                 br
                                 strong Email:
-                                |  info@maxxcell.in
+                                  |  info@maxxcell.in
                                 br
                         .col-lg-2.col-md-6.footer-links
-                            h4 Useful Links
+                            h6 Useful Links
                             ul
                                 li
                                     i.bx.bx-chevron-right
@@ -51,8 +51,9 @@ mixin footer
                                 li
                                     i.bx.bx-chevron-right
                                     a(href='/privacy-policy') Privacy policy
-                        .col-lg-3.col-md-6.footer-links
-                            h4 Our Services
+                                br
+                        .col-lg-2.col-md-6.footer-links
+                            h6 Our Services
                             ul
                                 li
                                     i.bx.bx-chevron-right
@@ -69,13 +70,7 @@ mixin footer
                                     a(href='/our-services') Universities Selection
                                 li
                                     i.bx.bx-chevron-right
-                                    a(href='/our-services') VISA Assistance
-                        .col-lg-4.col-md-6.footer-newsletter
-                            h4 Join Our Newsletter
-                        
-                            form(action='' method='post')
-                                input.me-2(type='email' name='email')
-                                input(type='submit' value='Subscribe')
+                                    a(href='/our-services') VISA Assistance            
                 hr
                 .container.d-lg-flex.pb-4
                     .me-lg-auto.text-center.text-lg-start
@@ -98,3 +93,8 @@ mixin footer
                         |  &nbsp;
                         a.linkedin(href='https://www.linkedin.com/school/maxxcell-institute-of-professional-studies/')
                             i.bi.bi-linkedin
+
+                //- start WhatsApp icon
+                .whatsApp_icon
+                    a(href='https://wa.me/message/VHTA7E5XR77ID1')
+                        img.whatsApp_icon.btn(src='../static/images/WhatsApp.png' alt='Maxxcell WhatsApp')

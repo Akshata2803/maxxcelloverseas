@@ -166,3 +166,11 @@ p{
     
 
 }
+
+/* WhatsApp icon */
+
+.whatsApp_icon {
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+}

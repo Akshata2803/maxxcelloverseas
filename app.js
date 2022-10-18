@@ -108,10 +108,12 @@ app.get("/refund-policy", (req, res) => {
   const params = {};
   res.status(200).render("refund-policy.pug", params);
 });
+
 app.get("/terms-and-conditions", (req, res) => {
   const params = {};
   res.status(200).render("terms-and-conditions.pug", params);
 });
+
 app.get("/privacy-policy", (req, res) => {
   const params = {};
   res.status(200).render("privacy-policy.pug", params);
@@ -127,9 +129,7 @@ app.get("/about-maxxcell-institute-and-overseas-education-services", (req, res) 
   res.status(200).render("about-maxxcell-institute-and-overseas-education-services.pug", params);
 });
 
-app.get("/", (req, res) => {
-  res.send("This is my first app for Maxxcell Overseas");
-});
+
 
 app.get("/sitemap.xml", (req, res) => {
   const params = {};
@@ -139,6 +139,13 @@ app.get("/sitemap.xml", (req, res) => {
 // app.get("/about", (req, res) => {
 //   res.send("This is About us for Maxxcell Overseas");
 // });
+
+// Maxxcelll results
+app.get("/maxxcell-overseas-results", (req, res) => {
+  const params = {};
+  res.status(200).render("maxxcell-overseas-results.pug", params);
+});
+
 
 //Start the server
 app.listen(port, () => {

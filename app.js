@@ -136,9 +136,17 @@ app.get("/sitemap.xml", (req, res) => {
   res.status(200).render("sitemap.pug", params);
 });
 
-// app.get("/about", (req, res) => {
-//   res.send("This is About us for Maxxcell Overseas");
-// });
+
+// Landing pages
+
+app
+  .route("/profile-assessment-form")
+  .get((req, res) => {
+    res.render(
+      "landing-pages/profile-assessment-form.pug"
+    );
+  });
+
 
 // Maxxcelll results
 app.get("/maxxcell-overseas-results", (req, res) => {
